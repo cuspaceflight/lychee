@@ -1,0 +1,1918 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "HAB Flight Computer"
+Date "2021-08-31"
+Rev "1"
+Comp "Cambridge University Spaceflight"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Drawn By H. Franks"
+$EndDescr
+Text Label 6850 4000 2    50   ~ 0
+BARO_~CS
+Text Label 4600 3500 0    50   ~ 0
+SPI1_SCLK
+Text Label 4600 3700 0    50   ~ 0
+SPI1_MOSI
+Text Label 4600 3600 0    50   ~ 0
+SPI1_MISO
+Text Label 6850 2300 2    50   ~ 0
+SPI2_SCLK
+Text Label 6850 2500 2    50   ~ 0
+SPI2_MOSI
+Text Label 6850 2400 2    50   ~ 0
+SPI2_MISO
+Text Notes 6250 1450 0    39   ~ 0
+PB4 is JTRST,\nDO NOT CONNECT\n(Errata 2.1.4)
+NoConn ~ 6200 1400
+NoConn ~ 6200 4400
+NoConn ~ 6200 1500
+Text Label 4800 2350 0    50   ~ 0
+~RST
+Connection ~ 5100 900 
+Wire Wire Line
+	5100 850  5100 900 
+Wire Wire Line
+	5100 900  5100 1000
+$Comp
+L Strix:3v3 #PWR?
+U 1 1 60E7C43C
+P 5100 850
+AR Path="/6013AE2F/60E7C43C" Ref="#PWR?"  Part="1" 
+AR Path="/60E7C43C" Ref="#PWR019"  Part="1" 
+AR Path="/605DF50F/60E7C43C" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/60E7C43C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR019" H 5100 960 50  0001 L CNN
+F 1 "3v3" H 5100 950 50  0000 C CNN
+F 2 "" H 5100 850 50  0001 C CNN
+F 3 "" H 5100 850 50  0001 C CNN
+	1    5100 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 1500
+Wire Wire Line
+	5100 1500 5200 1500
+Wire Wire Line
+	5100 1400 5100 1500
+Wire Wire Line
+	5100 1400 5200 1400
+Wire Wire Line
+	5100 1300 5100 1400
+Wire Wire Line
+	5100 1300 5200 1300
+Wire Wire Line
+	5100 1200 5100 1300
+Wire Wire Line
+	5100 1200 5200 1200
+Wire Wire Line
+	5100 1000 5100 1100
+Wire Wire Line
+	5100 1100 5200 1100
+Wire Wire Line
+	5100 1100 5100 1200
+Connection ~ 5100 1400
+Connection ~ 5100 1300
+Connection ~ 5100 1200
+Connection ~ 5100 1000
+Connection ~ 5100 1100
+Wire Wire Line
+	5100 1000 5200 1000
+Wire Wire Line
+	4750 2100 5200 2100
+Wire Wire Line
+	4750 2200 5200 2200
+Wire Wire Line
+	4750 1000 5100 1000
+Wire Wire Line
+	4750 1400 5100 1400
+Wire Wire Line
+	4750 1300 5100 1300
+Wire Wire Line
+	4750 1200 5100 1200
+Wire Wire Line
+	4750 1100 5100 1100
+Wire Wire Line
+	4750 1500 5100 1500
+Wire Wire Line
+	4750 900  5100 900 
+$Comp
+L Strix:C C?
+U 1 1 60E7C46A
+P 4650 2100
+AR Path="/6013AE2F/60E7C46A" Ref="C?"  Part="1" 
+AR Path="/60E7C46A" Ref="C14"  Part="1" 
+AR Path="/605DF50F/60E7C46A" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C46A" Ref="C?"  Part="1" 
+F 0 "C14" H 4550 2100 50  0000 R CNN
+F 1 "2µ2" H 4350 2100 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 2100 50  0001 C CNN
+F 3 "" H 4650 2100 50  0001 C CNN
+F 4 "2362088" H 4650 2100 50  0001 C CNN "Farnell"
+	1    4650 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C471
+P 4650 2200
+AR Path="/6013AE2F/60E7C471" Ref="C?"  Part="1" 
+AR Path="/60E7C471" Ref="C15"  Part="1" 
+AR Path="/605DF50F/60E7C471" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C471" Ref="C?"  Part="1" 
+F 0 "C15" H 4550 2200 50  0000 R CNN
+F 1 "2µ2" H 4350 2200 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 2200 50  0001 C CNN
+F 3 "" H 4650 2200 50  0001 C CNN
+F 4 "2362088" H 4650 2200 50  0001 C CNN "Farnell"
+	1    4650 2200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2100 4650 2100
+Wire Wire Line
+	4650 2200 4600 2200
+Connection ~ 4600 1900
+Connection ~ 4600 2100
+Wire Wire Line
+	4600 2100 4600 1900
+Wire Wire Line
+	4600 1800 4600 1900
+Connection ~ 4600 1800
+Wire Wire Line
+	4600 1700 4600 1800
+Connection ~ 4600 1700
+Wire Wire Line
+	4600 1500 4600 1700
+Wire Wire Line
+	5200 1700 4600 1700
+Wire Wire Line
+	5200 1900 4600 1900
+Wire Wire Line
+	5200 1800 4600 1800
+Wire Wire Line
+	4600 2200 4600 2100
+$Comp
+L Strix:C C?
+U 1 1 60E7C486
+P 4650 1500
+AR Path="/6013AE2F/60E7C486" Ref="C?"  Part="1" 
+AR Path="/60E7C486" Ref="C13"  Part="1" 
+AR Path="/605DF50F/60E7C486" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C486" Ref="C?"  Part="1" 
+F 0 "C13" H 4550 1500 50  0000 R CNN
+F 1 "100n" H 4350 1500 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1500 50  0001 C CNN
+F 3 "" H 4650 1500 50  0001 C CNN
+F 4 "2496771" H 4650 1500 50  0001 C CNN "Farnell"
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C48D
+P 4650 1400
+AR Path="/6013AE2F/60E7C48D" Ref="C?"  Part="1" 
+AR Path="/60E7C48D" Ref="C12"  Part="1" 
+AR Path="/605DF50F/60E7C48D" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C48D" Ref="C?"  Part="1" 
+F 0 "C12" H 4550 1400 50  0000 R CNN
+F 1 "100n" H 4350 1400 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1400 50  0001 C CNN
+F 3 "" H 4650 1400 50  0001 C CNN
+F 4 "2496771" H 4650 1400 50  0001 C CNN "Farnell"
+	1    4650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C494
+P 4650 1300
+AR Path="/6013AE2F/60E7C494" Ref="C?"  Part="1" 
+AR Path="/60E7C494" Ref="C11"  Part="1" 
+AR Path="/605DF50F/60E7C494" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C494" Ref="C?"  Part="1" 
+F 0 "C11" H 4550 1300 50  0000 R CNN
+F 1 "100n" H 4350 1300 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1300 50  0001 C CNN
+F 3 "" H 4650 1300 50  0001 C CNN
+F 4 "2496771" H 4650 1300 50  0001 C CNN "Farnell"
+	1    4650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C49B
+P 4650 1200
+AR Path="/6013AE2F/60E7C49B" Ref="C?"  Part="1" 
+AR Path="/60E7C49B" Ref="C10"  Part="1" 
+AR Path="/605DF50F/60E7C49B" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C49B" Ref="C?"  Part="1" 
+F 0 "C10" H 4550 1200 50  0000 R CNN
+F 1 "100n" H 4350 1200 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1200 50  0001 C CNN
+F 3 "" H 4650 1200 50  0001 C CNN
+F 4 "2496771" H 4650 1200 50  0001 C CNN "Farnell"
+	1    4650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C4A2
+P 4650 1100
+AR Path="/6013AE2F/60E7C4A2" Ref="C?"  Part="1" 
+AR Path="/60E7C4A2" Ref="C9"  Part="1" 
+AR Path="/605DF50F/60E7C4A2" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C4A2" Ref="C?"  Part="1" 
+F 0 "C9" H 4550 1100 50  0000 R CNN
+F 1 "100n" H 4350 1100 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1100 50  0001 C CNN
+F 3 "" H 4650 1100 50  0001 C CNN
+F 4 "2496771" H 4650 1100 50  0001 C CNN "Farnell"
+	1    4650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C4A9
+P 4650 900
+AR Path="/6013AE2F/60E7C4A9" Ref="C?"  Part="1" 
+AR Path="/60E7C4A9" Ref="C7"  Part="1" 
+AR Path="/605DF50F/60E7C4A9" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C4A9" Ref="C?"  Part="1" 
+F 0 "C7" H 4550 900 50  0000 R CNN
+F 1 "1µ" H 4350 900 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 900 50  0001 C CNN
+F 3 "" H 4650 900 50  0001 C CNN
+F 4 "2496814" H 4650 900 50  0001 C CNN "Farnell"
+	1    4650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 60E7C4B0
+P 4650 1000
+AR Path="/6013AE2F/60E7C4B0" Ref="C?"  Part="1" 
+AR Path="/60E7C4B0" Ref="C8"  Part="1" 
+AR Path="/605DF50F/60E7C4B0" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/60E7C4B0" Ref="C?"  Part="1" 
+F 0 "C8" H 4550 1000 50  0000 R CNN
+F 1 "4µ7" H 4350 1000 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 1000 50  0001 C CNN
+F 3 "" H 4650 1000 50  0001 C CNN
+F 4 "2426952" H 4650 1000 50  0001 C CNN "Farnell"
+	1    4650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 900  4600 900 
+Wire Wire Line
+	4600 900  4600 1000
+Wire Wire Line
+	4650 1300 4600 1300
+Wire Wire Line
+	4650 1200 4600 1200
+Connection ~ 4600 1200
+Wire Wire Line
+	4650 1100 4600 1100
+Connection ~ 4600 1100
+Wire Wire Line
+	4650 1000 4600 1000
+Connection ~ 4600 1000
+Wire Wire Line
+	4600 1200 4600 1300
+Wire Wire Line
+	4600 1100 4600 1200
+Wire Wire Line
+	4600 1000 4600 1100
+Wire Wire Line
+	4600 1300 4600 1400
+Wire Wire Line
+	4600 1500 4650 1500
+Connection ~ 4600 1300
+Wire Wire Line
+	4650 1400 4600 1400
+Connection ~ 4600 1400
+Wire Wire Line
+	4600 1400 4600 1500
+Connection ~ 4600 1500
+Connection ~ 4600 2200
+Wire Wire Line
+	5200 2500 4600 2500
+Wire Wire Line
+	4600 2200 4600 2400
+Wire Notes Line
+	4100 650  4100 4800
+Wire Notes Line
+	4100 4800 7200 4800
+Wire Notes Line
+	7200 4800 7200 650 
+Wire Notes Line
+	4100 650  7200 650 
+Text Notes 7150 4750 2    50   ~ 0
+Microcontroller
+$Comp
+L Strix:GND #PWR?
+U 1 1 6142011E
+P 4500 2500
+AR Path="/6013AE2F/6142011E" Ref="#PWR?"  Part="1" 
+AR Path="/6142011E" Ref="#PWR018"  Part="1" 
+AR Path="/605DF50F/6142011E" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/6142011E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR018" H 4370 2540 50  0001 L CNN
+F 1 "GND" V 4500 2400 50  0000 R CNN
+F 2 "" H 4500 2500 50  0000 C CNN
+F 3 "" H 4500 2500 50  0000 C CNN
+	1    4500 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2500 4600 2500
+NoConn ~ 5200 2800
+Wire Wire Line
+	4600 2700 5200 2700
+Text Label 4600 2700 0    50   ~ 0
+MCU_CLK
+Wire Wire Line
+	6850 1800 6200 1800
+Text Label 6850 1800 2    50   ~ 0
+RADIO_SDN
+Connection ~ 4600 2500
+Wire Wire Line
+	5200 3000 4600 3000
+Wire Wire Line
+	4600 3100 5200 3100
+Text Label 4600 3100 0    50   ~ 0
+UART4_RX
+Text Label 4600 3000 0    50   ~ 0
+UART4_TX
+Text Label 4600 3400 0    50   ~ 0
+IMU_INT
+Text Label 4600 3800 0    50   ~ 0
+IMU_~CS
+Text Label 6850 2200 2    50   ~ 0
+RADIO_~CS
+Text Label 6850 3800 2    50   ~ 0
+SPI3_MISO
+Text Label 6850 3900 2    50   ~ 0
+SPI3_MOSI
+Text Label 6850 3700 2    50   ~ 0
+SPI3_SCLK
+Wire Wire Line
+	5200 3400 4600 3400
+Wire Notes Line
+	11100 750  11100 2000
+Text Notes 11050 1950 2    50   ~ 0
+Antennas (SMA)
+Wire Wire Line
+	6200 1900 6850 1900
+Text Label 6850 1900 2    50   ~ 0
+RADIO_~INT
+Text Label 6850 2000 2    50   ~ 0
+USART3_TX
+Text Label 6850 2100 2    50   ~ 0
+USART3_RX
+Text Label 6850 1200 2    50   ~ 0
+GPS_~RESET
+Wire Wire Line
+	6850 1200 6200 1200
+Text Label 4600 4300 0    50   ~ 0
+SWDIO
+Text Label 4600 4400 0    50   ~ 0
+SWDCLK
+Wire Wire Line
+	4600 4300 5200 4300
+Wire Wire Line
+	4600 4400 5200 4400
+NoConn ~ 5200 4500
+NoConn ~ 6200 1300
+Wire Wire Line
+	6200 2000 7300 2000
+Wire Wire Line
+	6200 2100 7400 2100
+Wire Wire Line
+	6200 2200 7500 2200
+Wire Wire Line
+	6200 2300 7600 2300
+Wire Wire Line
+	6200 2400 7700 2400
+Wire Wire Line
+	6200 2500 7800 2500
+NoConn ~ 5200 4200
+NoConn ~ 6200 3200
+NoConn ~ 6200 3100
+NoConn ~ 6200 3000
+NoConn ~ 6200 2900
+NoConn ~ 6200 2800
+NoConn ~ 6200 2700
+NoConn ~ 6200 3400
+NoConn ~ 6200 3300
+NoConn ~ 6200 1000
+NoConn ~ 6200 1100
+NoConn ~ 5200 3200
+NoConn ~ 5200 3300
+Wire Notes Line
+	1800 2950 1800 1850
+Text Notes 1750 2900 2    50   ~ 0
+Mounting Holes
+$Comp
+L Strix:MountingHole_Pad H1
+U 1 1 61342567
+P 750 2300
+F 0 "H1" H 750 2500 50  0000 C CNN
+F 1 "MountingHole_Pad" H 850 2258 50  0001 L CNN
+F 2 "Strix:MountingHole_3.2mm_M3_Pad_Via" H 750 2300 50  0001 C CNN
+F 3 "~" H 750 2300 50  0001 C CNN
+	1    750  2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2400 1650 2500
+Wire Wire Line
+	1650 2500 1350 2500
+Wire Wire Line
+	750  2500 750  2400
+Wire Wire Line
+	1050 2400 1050 2500
+Connection ~ 1050 2500
+Wire Wire Line
+	1350 2400 1350 2500
+Connection ~ 1350 2500
+Wire Wire Line
+	750  2500 750  2600
+$Comp
+L Strix:GND #PWR01
+U 1 1 6136FA42
+P 750 2600
+F 0 "#PWR01" H 620 2640 50  0001 L CNN
+F 1 "GND" H 750 2500 50  0000 C CNN
+F 2 "" H 750 2600 50  0001 C CNN
+F 3 "" H 750 2600 50  0001 C CNN
+	1    750  2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2500 1350 2500
+Connection ~ 750  2500
+Wire Wire Line
+	750  2500 1050 2500
+$Comp
+L Strix:MountingHole_Pad H2
+U 1 1 614C3C18
+P 1050 2300
+F 0 "H2" H 1050 2500 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1150 2258 50  0001 L CNN
+F 2 "Strix:MountingHole_3.2mm_M3_Pad_Via" H 1050 2300 50  0001 C CNN
+F 3 "~" H 1050 2300 50  0001 C CNN
+	1    1050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:MountingHole_Pad H3
+U 1 1 614C3E44
+P 1350 2300
+F 0 "H3" H 1350 2500 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1450 2258 50  0001 L CNN
+F 2 "Strix:MountingHole_3.2mm_M3_Pad_Via" H 1350 2300 50  0001 C CNN
+F 3 "~" H 1350 2300 50  0001 C CNN
+	1    1350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:MountingHole_Pad H4
+U 1 1 614C3FC6
+P 1650 2300
+F 0 "H4" H 1650 2500 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1750 2258 50  0001 L CNN
+F 2 "Strix:MountingHole_3.2mm_M3_Pad_Via" H 1650 2300 50  0001 C CNN
+F 3 "~" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1800 1850 600  1850
+Wire Notes Line
+	600  1850 600  2950
+Wire Notes Line
+	600  2950 1800 2950
+Wire Wire Line
+	7900 1050 8500 1050
+Wire Wire Line
+	7900 1900 8500 1900
+Wire Wire Line
+	7900 1800 8500 1800
+Wire Wire Line
+	7800 1550 8500 1550
+Wire Wire Line
+	7700 1450 8500 1450
+Wire Wire Line
+	7600 1350 8500 1350
+Text Label 7900 1550 0    50   ~ 0
+SPI2_MOSI
+Text Label 7900 1450 0    50   ~ 0
+SPI2_MISO
+Text Label 7900 1350 0    50   ~ 0
+SPI2_SCLK
+Wire Wire Line
+	7500 1250 8500 1250
+Wire Wire Line
+	7400 950  8500 950 
+Wire Wire Line
+	7300 850  8500 850 
+Text Label 7900 1250 0    50   ~ 0
+RADIO_~CS
+Text Label 7900 1900 0    50   ~ 0
+RADIO_SDN
+Text Label 7900 950  0    50   ~ 0
+USART3_RX
+Text Label 7900 850  0    50   ~ 0
+USART3_TX
+Text Label 7900 1700 0    50   ~ 0
+RADIO_~INT
+Wire Wire Line
+	7900 1700 8500 1700
+Text Label 7900 1800 0    50   ~ 0
+RADIO_CLK
+Text Label 7900 1050 0    50   ~ 0
+GPS_~RESET
+Wire Wire Line
+	7300 850  7300 2000
+Wire Wire Line
+	7400 950  7400 2100
+Wire Wire Line
+	7500 1250 7500 2200
+Wire Wire Line
+	7600 1350 7600 2300
+Wire Wire Line
+	7700 1450 7700 2400
+Wire Wire Line
+	7800 1550 7800 2500
+$Comp
+L Strix:STM32F405RGT6 U3
+U 1 1 6138D4B0
+P 5700 2800
+F 0 "U3" H 5700 4825 50  0000 C CNN
+F 1 "STM32F405RGT6" H 5700 4734 50  0000 C CNN
+F 2 "Strix:LQFP-64_10x10mm_P0.5mm" H 5300 800 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5300 700 50  0001 L CNN
+F 4 "2064363" H 5300 600 50  0001 L CNN "Farnell"
+	1    5700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:VBATT #PWR07
+U 1 1 61368BDB
+P 2050 850
+F 0 "#PWR07" H 2050 960 50  0001 L CNN
+F 1 "VBATT" H 2050 950 50  0000 C CNN
+F 2 "" H 2050 850 50  0001 C CNN
+F 3 "" H 2050 850 50  0001 C CNN
+	1    2050 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1350 2800 1450
+Wire Wire Line
+	2800 1450 3300 1450
+Wire Wire Line
+	3300 1450 3300 1050
+Wire Wire Line
+	3300 1050 3200 1050
+$Comp
+L Strix:C C5
+U 1 1 6137512C
+P 3750 1200
+F 0 "C5" V 3754 1258 50  0000 L CNN
+F 1 "10u" V 3845 1258 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3750 1200 50  0001 C CNN
+F 3 "" H 3750 1200 50  0001 C CNN
+	1    3750 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 950  3750 950 
+Wire Wire Line
+	3750 950  3750 1200
+Wire Wire Line
+	3750 1300 3750 1450
+Wire Wire Line
+	3750 1450 3300 1450
+Connection ~ 3300 1450
+Wire Wire Line
+	3750 950  3750 850 
+Connection ~ 3750 950 
+$Comp
+L Strix:3v3 #PWR016
+U 1 1 61396B00
+P 3750 850
+F 0 "#PWR016" H 3750 960 50  0001 L CNN
+F 1 "3v3" H 3750 950 50  0000 C CNN
+F 2 "" H 3750 850 50  0001 C CNN
+F 3 "" H 3750 850 50  0001 C CNN
+	1    3750 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1050 2300 1050
+Wire Wire Line
+	2300 1050 2300 950 
+Wire Wire Line
+	2300 950  2400 950 
+$Comp
+L Strix:C C2
+U 1 1 613AE7C0
+P 2050 1200
+F 0 "C2" V 2054 1258 50  0000 L CNN
+F 1 "10u" V 2145 1258 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2050 1200 50  0001 C CNN
+F 3 "" H 2050 1200 50  0001 C CNN
+	1    2050 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 1200 2050 950 
+Wire Wire Line
+	2050 950  2300 950 
+Connection ~ 2300 950 
+Wire Wire Line
+	2050 1450 2050 1300
+Connection ~ 2800 1450
+Wire Wire Line
+	2050 850  2050 950 
+Connection ~ 2050 950 
+Connection ~ 2050 1450
+Wire Wire Line
+	2800 1450 2050 1450
+Wire Wire Line
+	2050 1550 2050 1450
+$Comp
+L Strix:GND #PWR08
+U 1 1 613EE800
+P 2050 1550
+F 0 "#PWR08" H 1920 1590 50  0001 L CNN
+F 1 "GND" H 2050 1450 50  0000 C CNN
+F 2 "" H 2050 1550 50  0001 C CNN
+F 3 "" H 2050 1550 50  0001 C CNN
+	1    2050 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 3950 1700 2    50   ~ 0
+3v3 Power (500mA Max)
+Wire Notes Line
+	4000 650  1900 650 
+Wire Notes Line
+	1900 650  1900 1750
+Wire Notes Line
+	1900 1750 4000 1750
+Wire Notes Line
+	4000 650  4000 1750
+$Comp
+L Strix:R R3
+U 1 1 61431240
+P 3500 2250
+F 0 "R3" H 3550 2300 50  0000 C CNN
+F 1 "100k" H 3550 2200 50  0000 C CNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 3500 2250 50  0001 C CNN
+F 3 "" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2250 3300 2250
+$Comp
+L Strix:R R1
+U 1 1 6143E64D
+P 3300 2400
+F 0 "R1" V 3304 2444 50  0000 L CNN
+F 1 "200k" V 3395 2444 50  0000 L CNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 3300 2400 50  0001 C CNN
+F 3 "" H 3300 2400 50  0001 C CNN
+	1    3300 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2400 3300 2250
+Connection ~ 3300 2250
+Wire Wire Line
+	3300 2250 3200 2250
+Wire Wire Line
+	3300 2500 3300 2650
+Wire Wire Line
+	3300 2650 2800 2650
+Wire Wire Line
+	2800 2650 2800 2550
+$Comp
+L Strix:C C6
+U 1 1 61465F1C
+P 3750 2400
+F 0 "C6" V 3754 2458 50  0000 L CNN
+F 1 "10u" V 3845 2458 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3750 2400 50  0001 C CNN
+F 3 "" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2400 3750 2250
+Wire Wire Line
+	3750 2250 3600 2250
+Wire Wire Line
+	3750 2500 3750 2650
+Wire Wire Line
+	3750 2650 3300 2650
+Connection ~ 3300 2650
+Wire Wire Line
+	2400 2250 2300 2250
+Wire Wire Line
+	2300 2250 2300 2150
+Wire Wire Line
+	2300 2150 2400 2150
+$Comp
+L Strix:VBATT #PWR09
+U 1 1 61491BC7
+P 2050 2050
+F 0 "#PWR09" H 2050 2160 50  0001 L CNN
+F 1 "VBATT" H 2050 2150 50  0000 C CNN
+F 2 "" H 2050 2050 50  0001 C CNN
+F 3 "" H 2050 2050 50  0001 C CNN
+	1    2050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C3
+U 1 1 61491BCD
+P 2050 2400
+F 0 "C3" V 2054 2458 50  0000 L CNN
+F 1 "10u" V 2145 2458 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2050 2400 50  0001 C CNN
+F 3 "" H 2050 2400 50  0001 C CNN
+	1    2050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 2400 2050 2150
+Wire Wire Line
+	2050 2150 2300 2150
+Wire Wire Line
+	2050 2650 2050 2500
+Wire Wire Line
+	2050 2050 2050 2150
+Connection ~ 2050 2150
+Connection ~ 2050 2650
+Wire Wire Line
+	2800 2650 2050 2650
+Wire Wire Line
+	2050 2750 2050 2650
+$Comp
+L Strix:GND #PWR010
+U 1 1 61491BDB
+P 2050 2750
+F 0 "#PWR010" H 1920 2790 50  0001 L CNN
+F 1 "GND" H 2050 2650 50  0000 C CNN
+F 2 "" H 2050 2750 50  0001 C CNN
+F 3 "" H 2050 2750 50  0001 C CNN
+	1    2050 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 2150
+Connection ~ 2800 2650
+Wire Wire Line
+	3200 2150 3750 2150
+Wire Wire Line
+	3750 2150 3750 2250
+Connection ~ 3750 2250
+Wire Wire Line
+	3750 2150 3750 2050
+Connection ~ 3750 2150
+$Comp
+L Strix:1v8 #PWR017
+U 1 1 614E2404
+P 3750 2050
+F 0 "#PWR017" H 3750 2160 50  0001 L CNN
+F 1 "1v8" H 3750 2150 50  0000 C CNN
+F 2 "" H 3750 2050 50  0001 C CNN
+F 3 "" H 3750 2050 50  0001 C CNN
+	1    3750 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 3950 2900 2    50   ~ 0
+1v8 Power (500mA Max)
+Wire Notes Line
+	4000 2950 4000 1850
+Wire Notes Line
+	4000 1850 1900 1850
+Wire Notes Line
+	1900 1850 1900 2950
+Wire Notes Line
+	1900 2950 4000 2950
+$Comp
+L Strix:MAX604 U1
+U 1 1 613615AC
+P 2800 1050
+F 0 "U1" H 2800 1392 50  0000 C CNN
+F 1 "MAX604" H 2800 1301 50  0000 C CNN
+F 2 "Strix:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 1375 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX603-MAX604.pdf" H 2800 1000 50  0001 C CNN
+	1    2800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:MAX604 U2
+U 1 1 61361B6F
+P 2800 2250
+F 0 "U2" H 2800 2592 50  0000 C CNN
+F 1 "MAX604" H 2800 2501 50  0000 C CNN
+F 2 "Strix:SOIC-8_3.9x4.9mm_P1.27mm" H 2800 2575 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX603-MAX604.pdf" H 2800 2200 50  0001 C CNN
+	1    2800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:Conn_01x03 J1
+U 1 1 61395090
+P 950 1150
+F 0 "J1" H 1050 1200 50  0000 L CNN
+F 1 "BATT" H 1050 1100 50  0000 L CNN
+F 2 "Strix:Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal" H 950 1150 50  0001 C CNN
+F 3 "~" H 950 1150 50  0001 C CNN
+F 4 "2820685" H 950 1150 50  0001 C CNN "Farnell"
+	1    950  1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1050 1250 1050
+Wire Wire Line
+	1250 1050 1250 950 
+Wire Wire Line
+	1150 1250 1250 1250
+Wire Wire Line
+	1250 1250 1250 1350
+$Comp
+L Strix:VBATT #PWR05
+U 1 1 613DA1D9
+P 1250 950
+F 0 "#PWR05" H 1250 1060 50  0001 L CNN
+F 1 "VBATT" H 1250 1050 50  0000 C CNN
+F 2 "" H 1250 950 50  0001 C CNN
+F 3 "" H 1250 950 50  0001 C CNN
+	1    1250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR06
+U 1 1 613DA41E
+P 1250 1350
+F 0 "#PWR06" H 1120 1390 50  0001 L CNN
+F 1 "GND" H 1250 1250 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	1    0    0    -1  
+$EndComp
+Text Label 1700 1150 2    50   ~ 0
+BATT_MON
+Wire Wire Line
+	1150 1150 1700 1150
+Wire Notes Line
+	1800 1750 1800 650 
+Wire Notes Line
+	1800 650  600  650 
+Wire Notes Line
+	600  650  600  1750
+Wire Notes Line
+	600  1750 1800 1750
+Text Notes 1750 1700 2    50   ~ 0
+Battery Connector
+NoConn ~ 6200 1600
+NoConn ~ 6200 1700
+Wire Wire Line
+	5200 3900 4600 3900
+Wire Wire Line
+	4600 4000 5200 4000
+Text Label 4600 4000 0    50   ~ 0
+USART1_RX
+Text Label 4600 3900 0    50   ~ 0
+USART1_TX
+NoConn ~ 5200 4100
+NoConn ~ 6200 4100
+NoConn ~ 6200 4200
+Wire Wire Line
+	4000 3500 5200 3500
+Wire Wire Line
+	4000 3600 5200 3600
+Wire Wire Line
+	4000 3700 5200 3700
+Wire Wire Line
+	4000 3800 5200 3800
+Entry Wire Line
+	3900 3600 4000 3500
+Entry Wire Line
+	3900 3700 4000 3600
+Entry Wire Line
+	3900 3800 4000 3700
+Entry Wire Line
+	3900 3900 4000 3800
+Entry Wire Line
+	4000 5100 3900 5000
+Entry Wire Line
+	4000 5200 3900 5100
+Entry Wire Line
+	4000 5300 3900 5200
+Entry Wire Line
+	4000 5400 3900 5300
+Wire Wire Line
+	5100 5100 4000 5100
+Wire Wire Line
+	5100 5200 4000 5200
+Wire Wire Line
+	5100 5300 4000 5300
+Wire Wire Line
+	4000 5400 5100 5400
+Wire Wire Line
+	5100 5550 4600 5550
+Text Label 4600 5100 0    50   ~ 0
+SPI1_SCLK
+Text Label 4600 5300 0    50   ~ 0
+SPI1_MISO
+Text Label 4600 5200 0    50   ~ 0
+SPI1_MOSI
+Text Label 4600 5400 0    50   ~ 0
+IMU_~CS
+Text Label 4600 5550 0    50   ~ 0
+IMU_INT
+Entry Wire Line
+	7300 5400 7400 5300
+Entry Wire Line
+	7300 5300 7400 5200
+Entry Wire Line
+	7300 5200 7400 5100
+Entry Wire Line
+	7300 5100 7400 5000
+Wire Wire Line
+	6300 5100 7300 5100
+Wire Wire Line
+	6300 5200 7300 5200
+Wire Wire Line
+	6300 5300 7300 5300
+Wire Wire Line
+	6300 5400 7300 5400
+$Sheet
+S 5100 5000 1200 650 
+U 619FD90A
+F0 "Altimeter" 50
+F1 "altimeter.sch" 50
+F2 "IMU_SCLK" I L 5100 5100 50 
+F3 "IMU_MOSI" I L 5100 5200 50 
+F4 "BARO_SCLK" I R 6300 5100 50 
+F5 "BARO_MOSI" I R 6300 5200 50 
+F6 "BARO_~CS" I R 6300 5400 50 
+F7 "IMU_INT" O L 5100 5550 50 
+F8 "BARO_MISO" O R 6300 5300 50 
+F9 "IMU_MISO" O L 5100 5300 50 
+F10 "IMU_~CS" I L 5100 5400 50 
+$EndSheet
+Text Label 6850 5400 2    50   ~ 0
+BARO_~CS
+Text Label 6850 5300 2    50   ~ 0
+SPI3_MISO
+Text Label 6850 5200 2    50   ~ 0
+SPI3_MOSI
+Text Label 6850 5100 2    50   ~ 0
+SPI3_SCLK
+Wire Notes Line
+	11100 5450 9300 5450
+Wire Notes Line
+	9300 5450 9300 6300
+Wire Notes Line
+	11100 5450 11100 6300
+Wire Notes Line
+	600  7500 600  6000
+Wire Notes Line
+	600  6000 1850 6000
+Wire Notes Line
+	1850 7500 600  7500
+Wire Wire Line
+	1950 6800 1750 6800
+$Comp
+L Strix:TCXO Y1
+U 1 1 611955E4
+P 1450 6800
+F 0 "Y1" H 1300 6900 50  0000 C CNN
+F 1 "TCXO" H 1350 6600 50  0000 C CNN
+F 2 "cusf:XTAL-25x20" H 1250 6800 50  0001 C CNN
+F 3 "" H 1250 6800 50  0001 C CNN
+F 4 "2405785" H 1250 6500 50  0001 L CNN "Farnell"
+	1    1450 6800
+	1    0    0    -1  
+$EndComp
+Text Notes 11050 6250 2    50   ~ 0
+Programming Interface (SWD)
+Wire Notes Line
+	9300 6300 11100 6300
+Wire Wire Line
+	11000 5750 10550 5750
+Wire Wire Line
+	11000 5850 10550 5850
+Text Label 11000 5850 2    50   ~ 0
+SWDCLK
+Text Label 11000 5750 2    50   ~ 0
+SWDIO
+$Comp
+L Strix:3v3 #PWR020
+U 1 1 6385012E
+P 9650 5650
+F 0 "#PWR020" H 9650 5760 50  0001 L CNN
+F 1 "3v3" H 9650 5750 50  0000 C CNN
+F 2 "" H 9650 5650 50  0001 C CNN
+F 3 "" H 9650 5650 50  0001 C CNN
+	1    9650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR021
+U 1 1 6384FD49
+P 9650 6050
+F 0 "#PWR021" H 9520 6090 50  0001 L CNN
+F 1 "GND" H 9650 5950 50  0000 C CNN
+F 2 "" H 9650 6050 50  0001 C CNN
+F 3 "" H 9650 6050 50  0001 C CNN
+	1    9650 6050
+	1    0    0    -1  
+$EndComp
+Text Label 9400 5850 0    50   ~ 0
+~RST
+Wire Wire Line
+	9650 5750 9650 5650
+Wire Wire Line
+	9750 5750 9650 5750
+Wire Wire Line
+	9650 5950 9650 6050
+Wire Wire Line
+	9750 5950 9650 5950
+NoConn ~ 10550 5950
+$Comp
+L Strix:SWD_TC P1
+U 1 1 6374F08D
+P 10150 5850
+F 0 "P1" H 9850 6050 50  0000 L CNN
+F 1 "SWD_TC" H 9850 5650 50  0000 L CNN
+F 2 "Strix:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 9850 5550 50  0001 L CNN
+F 3 "" H 9750 5950 50  0001 C CNN
+	1    10150 5850
+	1    0    0    -1  
+$EndComp
+Text Notes 1800 7450 2    50   ~ 0
+26MHz Oscillator
+Wire Notes Line
+	5250 6000 3400 6000
+Wire Notes Line
+	5250 7500 5250 6000
+Wire Notes Line
+	3400 7500 5250 7500
+Wire Notes Line
+	3400 6000 3400 7500
+Wire Notes Line
+	1850 6000 1850 7500
+NoConn ~ 4350 6900
+Text Notes 5200 7450 2    50   ~ 0
+Clock Buffer
+Text Label 5150 6800 2    50   ~ 0
+RADIO_CLK
+Text Label 5150 6700 2    50   ~ 0
+MCU_CLK
+$Comp
+L Strix:1v8 #PWR02
+U 1 1 6119573F
+P 750 6700
+F 0 "#PWR02" H 750 6810 50  0001 L CNN
+F 1 "1v8" H 750 6800 50  0000 C CNN
+F 2 "" H 750 6700 50  0001 C CNN
+F 3 "" H 750 6700 50  0001 C CNN
+	1    750  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  6800 1150 6800
+Wire Wire Line
+	750  7050 750  7150
+Connection ~ 750  6800
+Wire Wire Line
+	750  6800 750  6950
+Wire Wire Line
+	750  6800 750  6700
+$Comp
+L Strix:C C1
+U 1 1 611955F8
+P 750 6950
+F 0 "C1" V 750 6900 50  0000 R CNN
+F 1 "100n" V 850 6900 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 750 6950 50  0001 C CNN
+F 3 "" H 750 6950 50  0001 C CNN
+	1    750  6950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:GND #PWR03
+U 1 1 611955F2
+P 750 7150
+F 0 "#PWR03" H 620 7190 50  0001 L CNN
+F 1 "GND" H 750 7050 50  0000 C CNN
+F 2 "" H 750 7150 50  0001 C CNN
+F 3 "" H 750 7150 50  0001 C CNN
+	1    750  7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6900 1150 6900
+Wire Wire Line
+	1050 7150 1050 6900
+$Comp
+L Strix:GND #PWR04
+U 1 1 611955EA
+P 1050 7150
+F 0 "#PWR04" H 920 7190 50  0001 L CNN
+F 1 "GND" H 1050 7050 50  0000 C CNN
+F 2 "" H 1050 7150 50  0001 C CNN
+F 3 "" H 1050 7150 50  0001 C CNN
+	1    1050 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4000 7300 4000
+Wire Wire Line
+	6200 3700 7300 3700
+Wire Wire Line
+	6200 3800 7300 3800
+Wire Wire Line
+	6200 3900 7300 3900
+Entry Wire Line
+	7400 4100 7300 4000
+Entry Wire Line
+	7400 4000 7300 3900
+Entry Wire Line
+	7400 3900 7300 3800
+Entry Wire Line
+	7400 3800 7300 3700
+Connection ~ 10150 950 
+Connection ~ 10150 1400
+Wire Wire Line
+	10700 1400 10150 1400
+Wire Wire Line
+	10150 1500 10150 1400
+Wire Wire Line
+	10300 1500 10150 1500
+Connection ~ 10600 1500
+Wire Wire Line
+	10500 1500 10600 1500
+Wire Wire Line
+	10700 1500 10600 1500
+Wire Wire Line
+	10600 1500 10600 1600
+$Comp
+L Strix:GND #PWR031
+U 1 1 60D652AE
+P 10600 1600
+F 0 "#PWR031" H 10470 1640 50  0001 L CNN
+F 1 "GND" H 10600 1500 50  0000 C CNN
+F 2 "" H 10600 1600 50  0001 C CNN
+F 3 "" H 10600 1600 50  0001 C CNN
+	1    10600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 950  10150 950 
+Wire Wire Line
+	10150 1050 10150 950 
+Wire Wire Line
+	10300 1050 10150 1050
+Connection ~ 10600 1050
+Wire Wire Line
+	10500 1050 10600 1050
+Wire Wire Line
+	10700 1050 10600 1050
+Wire Wire Line
+	10600 1050 10600 1150
+$Comp
+L Strix:GND #PWR030
+U 1 1 60D03C1D
+P 10600 1150
+F 0 "#PWR030" H 10470 1190 50  0001 L CNN
+F 1 "GND" H 10600 1050 50  0000 C CNN
+F 2 "" H 10600 1150 50  0001 C CNN
+F 3 "" H 10600 1150 50  0001 C CNN
+	1    10600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:COAX P3
+U 1 1 60D652A8
+P 10800 1400
+F 0 "P3" H 10900 1450 50  0000 L CNN
+F 1 "TLM" H 10900 1350 50  0000 L CNN
+F 2 "Strix:SMA-EDGE" H 10800 1190 50  0001 C CNN
+F 3 "" H 10900 1300 50  0001 C CNN
+F 4 "1608592" H 10800 1120 50  0001 C CNN "Farnell"
+	1    10800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:COAX P2
+U 1 1 60D03629
+P 10800 950
+F 0 "P2" H 10900 1000 50  0000 L CNN
+F 1 "GPS" H 10900 900 50  0000 L CNN
+F 2 "Strix:SMA-EDGE" H 10800 740 50  0001 C CNN
+F 3 "" H 10900 850 50  0001 C CNN
+F 4 "1608592" H 10800 670 50  0001 C CNN "Farnell"
+	1    10800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:ESD_DIODE D2
+U 1 1 60D652B8
+P 10400 1500
+F 0 "D2" H 10400 1450 50  0000 C TNN
+F 1 "ESD_DIODE" H 10350 1400 50  0001 L CNN
+F 2 "Strix:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 10350 1300 50  0001 L CNN
+F 3 "" H 10300 1500 50  0001 C CNN
+F 4 "2368169" H 10350 1200 50  0001 L CNN "Farnell"
+	1    10400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:ESD_DIODE D1
+U 1 1 60D1B9AF
+P 10400 1050
+F 0 "D1" H 10400 1000 50  0000 C TNN
+F 1 "ESD_DIODE" H 10350 950 50  0001 L CNN
+F 2 "Strix:D_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 10350 850 50  0001 L CNN
+F 3 "" H 10300 1050 50  0001 C CNN
+F 4 "2368169" H 10350 750 50  0001 L CNN "Farnell"
+	1    10400 1050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10000 2000 11100 2000
+Wire Notes Line
+	10000 750  10000 2000
+Wire Notes Line
+	11100 750  10000 750 
+Wire Wire Line
+	9900 1400 10150 1400
+Wire Wire Line
+	10150 950  9900 950 
+$Sheet
+S 8500 750  1400 1250
+U 611291B2
+F0 "Radio" 50
+F1 "radio.sch" 50
+F2 "ANT_TLM" O R 9900 1400 50 
+F3 "ANT_GPS" O R 9900 950 50 
+F4 "RADIO_~CS" I L 8500 1250 50 
+F5 "RADIO_CLK" I L 8500 1800 50 
+F6 "RADIO_SDN" I L 8500 1900 50 
+F7 "GPS_~RESET" I L 8500 1050 50 
+F8 "GPS_RX" I L 8500 850 50 
+F9 "GPS_TX" I L 8500 950 50 
+F10 "RADIO_SCLK" I L 8500 1350 50 
+F11 "RADIO_MISO" I L 8500 1450 50 
+F12 "RADIO_MOSI" I L 8500 1550 50 
+F13 "RADIO_~INT" O L 8500 1700 50 
+$EndSheet
+Text Notes 9850 5250 2    50   ~ 0
+UART4 <-> RS-422
+Text Notes 9850 3700 2    50   ~ 0
+USART1 <-> RS-422
+Text Notes 11050 5250 2    50   ~ 0
+To Blackbox (RS-485)
+Text Notes 11050 3700 2    50   ~ 0
+Serial Out (RS-485)
+Wire Wire Line
+	9500 4650 10500 4650
+Wire Wire Line
+	9350 4700 9500 4700
+Wire Wire Line
+	9500 4700 9500 4650
+Wire Notes Line
+	10000 3850 10000 5300
+Wire Notes Line
+	11100 3850 10000 3850
+Wire Notes Line
+	11100 5300 10000 5300
+Wire Notes Line
+	11100 3850 11100 5300
+Wire Notes Line
+	9900 5300 9900 3850
+Wire Notes Line
+	8500 5300 9900 5300
+Wire Notes Line
+	8500 3850 8500 5300
+Wire Notes Line
+	9900 3850 8500 3850
+Wire Notes Line
+	8500 2400 9900 2400
+Wire Notes Line
+	8500 3750 8500 2400
+Wire Notes Line
+	9900 3750 8500 3750
+Wire Notes Line
+	9900 2400 9900 3750
+Wire Notes Line
+	10000 2400 11100 2400
+Wire Notes Line
+	10000 3750 10000 2400
+Wire Notes Line
+	11100 3750 10000 3750
+Wire Notes Line
+	11100 2400 11100 3750
+Connection ~ 9500 4250
+Wire Wire Line
+	9750 4350 10500 4350
+Wire Wire Line
+	9750 4250 9750 4350
+Wire Wire Line
+	9500 4250 9750 4250
+Wire Wire Line
+	9500 4450 10500 4450
+Connection ~ 9500 4450
+Wire Wire Line
+	9500 4400 9500 4450
+Wire Wire Line
+	9500 4300 9500 4250
+Wire Wire Line
+	9400 4250 9500 4250
+Wire Wire Line
+	9400 4300 9400 4250
+Wire Wire Line
+	9350 4300 9400 4300
+Wire Wire Line
+	9400 4550 10500 4550
+Wire Wire Line
+	9400 4600 9400 4550
+Wire Wire Line
+	9350 4600 9400 4600
+Wire Wire Line
+	9400 4450 9500 4450
+Wire Wire Line
+	9400 4400 9400 4450
+Wire Wire Line
+	9350 4400 9400 4400
+$Comp
+L Strix:GND #PWR?
+U 1 1 618D7B30
+P 10400 4950
+AR Path="/6013AE2F/618D7B30" Ref="#PWR?"  Part="1" 
+AR Path="/618D7B30" Ref="#PWR029"  Part="1" 
+AR Path="/605DF50F/618D7B30" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/618D7B30" Ref="#PWR?"  Part="1" 
+AR Path="/62013BB2/618D7B30" Ref="#PWR?"  Part="1" 
+F 0 "#PWR029" H 10270 4990 50  0001 L CNN
+F 1 "GND" H 10400 4850 50  0000 C CNN
+F 2 "" H 10400 4950 50  0000 C CNN
+F 3 "" H 10400 4950 50  0000 C CNN
+	1    10400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:3v3 #PWR028
+U 1 1 618D7B2A
+P 10400 4050
+AR Path="/618D7B2A" Ref="#PWR028"  Part="1" 
+AR Path="/62013BB2/618D7B2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR028" H 10400 4160 50  0001 L CNN
+F 1 "3v3" H 10400 4150 50  0000 C CNN
+F 2 "" H 10400 4050 50  0001 C CNN
+F 3 "" H 10400 4050 50  0001 C CNN
+	1    10400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4750 10400 4850
+Wire Wire Line
+	10500 4750 10400 4750
+Wire Wire Line
+	10400 4250 10400 4150
+Wire Wire Line
+	10500 4250 10400 4250
+$Comp
+L Strix:R R6
+U 1 1 618D7B1A
+P 9500 4300
+AR Path="/618D7B1A" Ref="R6"  Part="1" 
+AR Path="/62013BB2/618D7B1A" Ref="R?"  Part="1" 
+F 0 "R6" V 9504 4344 50  0000 L CNN
+F 1 "120" V 9595 4344 50  0000 L CNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 9500 4300 50  0001 C CNN
+F 3 "" H 9500 4300 50  0001 C CNN
+	1    9500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Strix:MAX14787E IC?
+U 1 1 618D7B14
+P 9050 4500
+AR Path="/62013BB2/618D7B14" Ref="IC?"  Part="1" 
+AR Path="/618D7B14" Ref="IC3"  Part="1" 
+F 0 "IC3" H 9050 4925 50  0000 C CNN
+F 1 "MAX14787E" H 9050 4834 50  0000 C CNN
+F 2 "Strix:MAX14787E" H 8850 4100 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14784E-MAX14789E.pdf" H 8850 4000 50  0001 L CNN
+F 4 "2528531" H 8850 3900 50  0001 L CNN "Farnell"
+	1    9050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3150 9500 3100
+Wire Wire Line
+	9350 3150 9500 3150
+Wire Wire Line
+	9500 3100 10650 3100
+Connection ~ 9500 2700
+Wire Wire Line
+	9750 2800 10650 2800
+Wire Wire Line
+	9750 2700 9750 2800
+Wire Wire Line
+	9500 2700 9750 2700
+Wire Wire Line
+	9500 2900 10650 2900
+Connection ~ 9500 2900
+Wire Wire Line
+	9500 2850 9500 2900
+Wire Wire Line
+	9500 2750 9500 2700
+Wire Wire Line
+	9400 2700 9500 2700
+Wire Wire Line
+	9400 2750 9400 2700
+Wire Wire Line
+	9350 2750 9400 2750
+Wire Wire Line
+	9400 3000 10650 3000
+Wire Wire Line
+	9400 3050 9400 3000
+Wire Wire Line
+	9350 3050 9400 3050
+Wire Wire Line
+	9400 2900 9500 2900
+Wire Wire Line
+	9400 2850 9400 2900
+Wire Wire Line
+	9350 2850 9400 2850
+$Comp
+L Strix:GND #PWR?
+U 1 1 617561BC
+P 10550 3400
+AR Path="/6013AE2F/617561BC" Ref="#PWR?"  Part="1" 
+AR Path="/617561BC" Ref="#PWR027"  Part="1" 
+AR Path="/605DF50F/617561BC" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/617561BC" Ref="#PWR?"  Part="1" 
+AR Path="/62013BB2/617561BC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR027" H 10420 3440 50  0001 L CNN
+F 1 "GND" H 10550 3300 50  0000 C CNN
+F 2 "" H 10550 3400 50  0000 C CNN
+F 3 "" H 10550 3400 50  0000 C CNN
+	1    10550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3200 10550 3300
+Wire Wire Line
+	10650 3200 10550 3200
+$Comp
+L Strix:R R5
+U 1 1 615D4399
+P 9500 2750
+AR Path="/615D4399" Ref="R5"  Part="1" 
+AR Path="/62013BB2/615D4399" Ref="R?"  Part="1" 
+F 0 "R5" V 9504 2794 50  0000 L CNN
+F 1 "120" V 9595 2794 50  0000 L CNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 9500 2750 50  0001 C CNN
+F 3 "" H 9500 2750 50  0001 C CNN
+	1    9500 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 3150 8650 3250
+Wire Wire Line
+	8750 3150 8650 3150
+Wire Wire Line
+	8650 2750 8650 2650
+Wire Wire Line
+	8750 2750 8650 2750
+$Comp
+L Strix:MAX14787E IC?
+U 1 1 615D438B
+P 9050 2950
+AR Path="/62013BB2/615D438B" Ref="IC?"  Part="1" 
+AR Path="/615D438B" Ref="IC2"  Part="1" 
+F 0 "IC2" H 9050 3375 50  0000 C CNN
+F 1 "MAX14787E" H 9050 3284 50  0000 C CNN
+F 2 "Strix:MAX14787E" H 8850 2550 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX14784E-MAX14789E.pdf" H 8850 2450 50  0001 L CNN
+F 4 "2528531" H 8850 2350 50  0001 L CNN "Farnell"
+	1    9050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:3v3 #PWR022
+U 1 1 615D4384
+P 8650 2650
+AR Path="/615D4384" Ref="#PWR022"  Part="1" 
+AR Path="/62013BB2/615D4384" Ref="#PWR?"  Part="1" 
+F 0 "#PWR022" H 8650 2760 50  0001 L CNN
+F 1 "3v3" H 8650 2750 50  0000 C CNN
+F 2 "" H 8650 2650 50  0001 C CNN
+F 3 "" H 8650 2650 50  0001 C CNN
+	1    8650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR?
+U 1 1 615D437E
+P 8650 3250
+AR Path="/6013AE2F/615D437E" Ref="#PWR?"  Part="1" 
+AR Path="/615D437E" Ref="#PWR023"  Part="1" 
+AR Path="/605DF50F/615D437E" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/615D437E" Ref="#PWR?"  Part="1" 
+AR Path="/62013BB2/615D437E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR023" H 8520 3290 50  0001 L CNN
+F 1 "GND" H 8650 3150 50  0000 C CNN
+F 2 "" H 8650 3250 50  0000 C CNN
+F 3 "" H 8650 3250 50  0000 C CNN
+	1    8650 3250
+	1    0    0    -1  
+$EndComp
+Text Label 7900 3000 0    50   ~ 0
+USART1_TX
+Text Label 7900 2900 0    50   ~ 0
+USART1_RX
+Wire Wire Line
+	8750 3000 7900 3000
+Wire Wire Line
+	7900 2900 8750 2900
+Wire Wire Line
+	8650 4700 8650 4800
+Wire Wire Line
+	8750 4700 8650 4700
+Wire Wire Line
+	8650 4300 8650 4200
+Wire Wire Line
+	8750 4300 8650 4300
+$Comp
+L Strix:3v3 #PWR024
+U 1 1 61425CDF
+P 8650 4200
+AR Path="/61425CDF" Ref="#PWR024"  Part="1" 
+AR Path="/62013BB2/61425CDF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR024" H 8650 4310 50  0001 L CNN
+F 1 "3v3" H 8650 4300 50  0000 C CNN
+F 2 "" H 8650 4200 50  0001 C CNN
+F 3 "" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR?
+U 1 1 61425CD9
+P 8650 4800
+AR Path="/6013AE2F/61425CD9" Ref="#PWR?"  Part="1" 
+AR Path="/61425CD9" Ref="#PWR025"  Part="1" 
+AR Path="/605DF50F/61425CD9" Ref="#PWR?"  Part="1" 
+AR Path="/6013AEF4/61425CD9" Ref="#PWR?"  Part="1" 
+AR Path="/62013BB2/61425CD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR025" H 8520 4840 50  0001 L CNN
+F 1 "GND" H 8650 4700 50  0000 C CNN
+F 2 "" H 8650 4800 50  0000 C CNN
+F 3 "" H 8650 4800 50  0000 C CNN
+	1    8650 4800
+	1    0    0    -1  
+$EndComp
+Text Label 7900 4550 0    50   ~ 0
+UART4_TX
+Text Label 7900 4450 0    50   ~ 0
+UART4_RX
+Wire Wire Line
+	8750 4550 7900 4550
+Wire Wire Line
+	7900 4450 8750 4450
+Wire Wire Line
+	9400 5850 9750 5850
+$Comp
+L Strix:C C?
+U 1 1 613D0152
+P 4650 2400
+AR Path="/6013AE2F/613D0152" Ref="C?"  Part="1" 
+AR Path="/613D0152" Ref="C16"  Part="1" 
+AR Path="/605DF50F/613D0152" Ref="C?"  Part="1" 
+AR Path="/6013AEF4/613D0152" Ref="C?"  Part="1" 
+F 0 "C16" H 4550 2400 50  0000 R CNN
+F 1 "100n" H 4350 2400 50  0000 R CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4650 2400 50  0001 C CNN
+F 3 "" H 4650 2400 50  0001 C CNN
+F 4 "2496771" H 4650 2400 50  0001 C CNN "Farnell"
+	1    4650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2400 4600 2400
+Connection ~ 4600 2400
+Wire Wire Line
+	4600 2400 4600 2500
+Wire Wire Line
+	4750 2400 5100 2400
+Wire Wire Line
+	4800 2350 5100 2350
+Wire Wire Line
+	5100 2350 5100 2400
+Connection ~ 5100 2400
+Wire Wire Line
+	5100 2400 5200 2400
+$Comp
+L Strix:NC7SZ04 IC1
+U 1 1 613990CD
+P 2700 6800
+F 0 "IC1" H 2700 7000 50  0000 C CNN
+F 1 "NC7SZ04" H 2700 6600 50  0000 C CNN
+F 2 "cusf:SOT-23-5" H 2690 6320 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/NC/NC7SZ04.pdf" H 2700 6520 50  0001 C CNN
+F 4 "" H 2700 6410 50  0001 C CNN "Farnell"
+	1    2700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C4
+U 1 1 613F0E6C
+P 1950 6800
+F 0 "C4" H 2000 6850 50  0000 C BNN
+F 1 "1n" H 2000 6750 50  0000 C TNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 1950 6800 50  0001 C CNN
+F 3 "" H 1950 6800 50  0001 C CNN
+	1    1950 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6800 2300 6800
+$Comp
+L Strix:GND #PWR0101
+U 1 1 614A11AA
+P 2700 6350
+F 0 "#PWR0101" H 2570 6390 50  0001 L CNN
+F 1 "GND" H 2700 6250 50  0000 C CNN
+F 2 "" H 2700 6350 50  0001 C CNN
+F 3 "" H 2700 6350 50  0001 C CNN
+	1    2700 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 6800
+Wire Wire Line
+	2300 6800 2050 6800
+Wire Wire Line
+	3150 6900 2900 6900
+Wire Wire Line
+	2900 6700 3000 6700
+Wire Wire Line
+	3000 6700 3000 6600
+$Comp
+L Strix:3v3 #PWR0102
+U 1 1 6153C1BE
+P 3000 6600
+F 0 "#PWR0102" H 3000 6710 50  0001 L CNN
+F 1 "3v3" H 3000 6723 50  0000 C CNN
+F 2 "" H 3000 6600 50  0001 C CNN
+F 3 "" H 3000 6600 50  0001 C CNN
+	1    3000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6300 2700 6350
+Wire Wire Line
+	3150 6150 3150 6900
+Wire Wire Line
+	3050 6150 3150 6150
+Wire Wire Line
+	2300 6150 2300 6800
+Wire Wire Line
+	2400 6150 2300 6150
+Connection ~ 2700 6150
+Wire Wire Line
+	2700 6150 2950 6150
+Wire Wire Line
+	2700 6150 2700 6200
+Wire Wire Line
+	2500 6150 2700 6150
+$Comp
+L Strix:C C31
+U 1 1 6145E6E0
+P 2700 6200
+F 0 "C31" V 2700 6250 50  0000 L CNN
+F 1 "10n" V 2800 6250 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2700 6200 50  0001 C CNN
+F 3 "" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Strix:R R9
+U 1 1 61432833
+P 2950 6150
+F 0 "R9" H 3050 6200 50  0000 L BNN
+F 1 "510k" H 3000 6200 50  0000 R BNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2950 6150 50  0001 C CNN
+F 3 "" H 2950 6150 50  0001 C CNN
+	1    2950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:R R8
+U 1 1 61432235
+P 2400 6150
+F 0 "R8" H 2400 6200 50  0000 R BNN
+F 1 "510k" H 2450 6200 50  0000 L BNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2400 6150 50  0001 C CNN
+F 3 "" H 2400 6150 50  0001 C CNN
+	1    2400 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 3250 7450 2    50   ~ 0
+Clipped Sine -> LVCMOS
+Wire Notes Line
+	2150 7500 3300 7500
+Wire Notes Line
+	3300 7500 3300 6000
+Wire Notes Line
+	3300 6000 2150 6000
+Wire Notes Line
+	2150 6000 2150 7500
+Wire Wire Line
+	2500 6900 2400 6900
+Wire Wire Line
+	2400 6900 2400 7150
+$Comp
+L Strix:GND #PWR0103
+U 1 1 61623A2D
+P 2400 7150
+F 0 "#PWR0103" H 2270 7190 50  0001 L CNN
+F 1 "GND" H 2400 7050 50  0000 C CNN
+F 2 "" H 2400 7150 50  0001 C CNN
+F 3 "" H 2400 7150 50  0001 C CNN
+	1    2400 7150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 6900
+$Comp
+L Strix:CDCLVC1103PW U9
+U 1 1 61380F87
+P 4000 6850
+F 0 "U9" H 4000 7100 50  0000 C CNN
+F 1 "CDCLVC1103PW" H 4000 6600 50  0000 C CNN
+F 2 "Strix:TSSOP-8_4.4x3mm_P0.65mm" H 4000 6850 50  0001 C CNN
+F 3 "" H 4000 6850 50  0001 C CNN
+	1    4000 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6800 3550 6800
+Wire Wire Line
+	3550 6800 3550 6700
+Wire Wire Line
+	3550 6700 3650 6700
+Wire Wire Line
+	3550 6700 3550 6600
+Connection ~ 3550 6700
+Wire Wire Line
+	3650 7000 3550 7000
+Wire Wire Line
+	3550 7000 3550 7100
+Wire Wire Line
+	3150 6900 3650 6900
+$Comp
+L Strix:3v3 #PWR0104
+U 1 1 61428396
+P 3550 6600
+F 0 "#PWR0104" H 3550 6710 50  0001 L CNN
+F 1 "3v3" H 3550 6723 50  0000 C CNN
+F 2 "" H 3550 6600 50  0001 C CNN
+F 3 "" H 3550 6600 50  0001 C CNN
+	1    3550 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR0105
+U 1 1 61428539
+P 3550 7100
+F 0 "#PWR0105" H 3420 7140 50  0001 L CNN
+F 1 "GND" H 3550 7000 50  0000 C CNN
+F 2 "" H 3550 7100 50  0001 C CNN
+F 3 "" H 3550 7100 50  0001 C CNN
+	1    3550 7100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6200 3600
+NoConn ~ 6200 3500
+Wire Notes Line
+	550  5950 5300 5950
+Wire Notes Line
+	5300 5950 5300 7700
+Wire Notes Line
+	5300 7700 550  7700
+Wire Notes Line
+	550  7700 550  5950
+Text Notes 5250 7650 2    50   ~ 0
+Clock Distribution
+Wire Wire Line
+	10550 3300 10650 3300
+Connection ~ 10550 3300
+Wire Wire Line
+	10550 3300 10550 3400
+Wire Wire Line
+	10400 4850 10500 4850
+Connection ~ 10400 4850
+Wire Wire Line
+	10400 4850 10400 4950
+Wire Wire Line
+	10400 4150 10500 4150
+Connection ~ 10400 4150
+Wire Wire Line
+	10400 4150 10400 4050
+Text Label 10050 4350 0    50   ~ 0
+UART4_RX+
+Text Label 10050 4450 0    50   ~ 0
+UART4_RX-
+Text Label 10050 4550 0    50   ~ 0
+UART4_TX+
+Text Label 10050 4650 0    50   ~ 0
+UART4_TX-
+Text Label 10050 2800 0    50   ~ 0
+USART1_RX+
+Text Label 10050 2900 0    50   ~ 0
+USART1_RX-
+Text Label 10050 3000 0    50   ~ 0
+USART1_TX+
+Text Label 10050 3100 0    50   ~ 0
+USART1_TX-
+$Comp
+L Strix:Conn_01x06 J2
+U 1 1 616F684D
+P 10850 3000
+F 0 "J2" H 10800 3400 50  0000 L CNN
+F 1 "SERIAL" H 10800 3300 50  0000 L CNN
+F 2 "Strix:Molex_Nano-Fit_105314-xx06_2x03_P2.50mm_Horizontal" H 10850 3000 50  0001 C CNN
+F 3 "~" H 10850 3000 50  0001 C CNN
+F 4 "2820689" H 10850 3000 50  0001 C CNN "Farnell"
+	1    10850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:Conn_01x08 J3
+U 1 1 6141FB13
+P 10700 4450
+F 0 "J3" H 10650 4950 50  0000 L CNN
+F 1 "BLACKBOX" H 10650 4850 50  0000 L CNN
+F 2 "Strix:Molex_Nano-Fit_105314-xx08_2x04_P2.50mm_Horizontal" H 10700 4450 50  0001 C CNN
+F 3 "~" H 10700 4450 50  0001 C CNN
+F 4 "2820690" H 10700 4450 50  0001 C CNN "Farnell"
+	1    10700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:R R10
+U 1 1 613BB2EE
+P 4500 6700
+F 0 "R10" H 4550 6850 50  0000 C CNN
+F 1 "10" H 4550 6750 50  0000 C BNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 4500 6700 50  0001 C CNN
+F 3 "" H 4500 6700 50  0001 C CNN
+	1    4500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6700 4350 6700
+Wire Wire Line
+	5150 6700 4600 6700
+Text Notes 3350 8150 0    50   ~ 0
+Note:\n- 3-output IC used because 2-output version not in stock\n- RADIO_CLK line should be properly impedance matched (currently not)
+Wire Wire Line
+	4600 6800 5150 6800
+Wire Wire Line
+	4500 6800 4350 6800
+$Comp
+L Strix:R R2
+U 1 1 61195648
+P 4500 6800
+F 0 "R2" H 4550 6650 50  0000 C CNN
+F 1 "10" H 4550 6750 50  0000 C TNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 4500 6800 50  0001 C CNN
+F 3 "" H 4500 6800 50  0001 C CNN
+	1    4500 6800
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	3900 3600 3900 5300
+Wire Bus Line
+	7400 3800 7400 5300
+$EndSCHEMATC

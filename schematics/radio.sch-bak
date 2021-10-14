@@ -1,0 +1,815 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "HAB Radio and GPS"
+Date "2021-08-31"
+Rev "1"
+Comp "Cambridge University Spaceflight"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Drawn By H. Franks"
+$EndDescr
+$Comp
+L Strix:Si4463 U7
+U 1 1 6136820B
+P 5000 2700
+F 0 "U7" H 5000 3525 50  0000 C CNN
+F 1 "Si4463" H 5000 3434 50  0000 C CNN
+F 2 "Strix:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 4700 1900 50  0001 L CNN
+F 3 "" H 4600 3300 50  0001 C CNN
+F 4 "2462637" H 4700 1800 50  0001 L CNN "Farnell"
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5600 6250 5600
+NoConn ~ 5750 5400
+Wire Wire Line
+	6450 2700 6900 2700
+Wire Wire Line
+	7500 2700 7800 2700
+$Comp
+L Strix:3v3 #PWR?
+U 1 1 612BD924
+P 6900 2250
+AR Path="/612BD924" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/612BD924" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 6900 2360 50  0001 L CNN
+F 1 "3v3" H 6900 2350 50  0000 C CNN
+F 2 "" H 6900 2250 50  0001 C CNN
+F 3 "" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2350 6900 2250
+Wire Wire Line
+	6900 2450 6900 2700
+$Comp
+L Strix:L L?
+U 1 1 612BD92C
+P 6900 2350
+AR Path="/612BD92C" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD92C" Ref="L1"  Part="1" 
+F 0 "L1" V 6904 2394 50  0000 L CNN
+F 1 "120n" V 6995 2394 50  0000 L CNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 6900 2350 50  0001 C CNN
+F 3 "" H 6900 2350 50  0001 C CNN
+	1    6900 2350
+	0    1    1    0   
+$EndComp
+Connection ~ 7500 2700
+Wire Wire Line
+	7350 2700 7500 2700
+Connection ~ 6900 2700
+Wire Wire Line
+	7050 2700 6900 2700
+Wire Wire Line
+	7250 2700 7150 2700
+Wire Wire Line
+	7500 3350 7350 3350
+Wire Wire Line
+	7500 2700 7500 3050
+Wire Wire Line
+	7500 3050 7500 3350
+Connection ~ 7500 3050
+Wire Wire Line
+	7350 3050 7500 3050
+$Comp
+L Strix:C C?
+U 1 1 612BD93D
+P 7250 3050
+AR Path="/612BD93D" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD93D" Ref="C27"  Part="1" 
+F 0 "C27" H 7300 3100 50  0000 C BNN
+F 1 "1p2" H 7300 3000 50  0000 C TNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7250 3050 50  0001 C CNN
+F 3 "" H 7250 3050 50  0001 C CNN
+	1    7250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:L L?
+U 1 1 612BD944
+P 7250 3350
+AR Path="/612BD944" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD944" Ref="L4"  Part="1" 
+F 0 "L4" H 7300 3400 50  0000 C BNN
+F 1 "24n" H 7300 3300 50  0000 C TNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 7250 3350 50  0001 C CNN
+F 3 "" H 7250 3350 50  0001 C CNN
+	1    7250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:GND #PWR?
+U 1 1 612BD94A
+P 6900 3650
+AR Path="/612BD94A" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/612BD94A" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 6770 3690 50  0001 L CNN
+F 1 "GND" H 6900 3550 50  0000 C CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3550 6900 3650
+$Comp
+L Strix:C C?
+U 1 1 612BD951
+P 6900 3450
+AR Path="/612BD951" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD951" Ref="C25"  Part="1" 
+F 0 "C25" V 6904 3508 50  0000 L CNN
+F 1 "3p" V 6995 3508 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6900 3450 50  0001 C CNN
+F 3 "" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3350 6900 3350
+Wire Wire Line
+	7250 3350 6900 3350
+Connection ~ 6900 3350
+Wire Wire Line
+	6900 3350 6900 3450
+Wire Wire Line
+	6900 3250 6900 3350
+Wire Wire Line
+	6350 3050 6900 3050
+Wire Wire Line
+	7250 3050 6900 3050
+Connection ~ 6900 3050
+Wire Wire Line
+	6900 3150 6900 3050
+$Comp
+L Strix:L L?
+U 1 1 612BD95B
+P 6900 3150
+AR Path="/612BD95B" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD95B" Ref="L2"  Part="1" 
+F 0 "L2" V 6904 3194 50  0000 L CNN
+F 1 "18n" V 7000 3200 50  0000 L CNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 6900 3150 50  0001 C CNN
+F 3 "" H 6900 3150 50  0001 C CNN
+	1    6900 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Strix:L L?
+U 1 1 612BD966
+P 7250 2700
+AR Path="/612BD966" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD966" Ref="L3"  Part="1" 
+F 0 "L3" H 7300 2750 50  0000 C BNN
+F 1 "3n3" H 7300 2650 50  0000 C TNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 7250 2700 50  0001 C CNN
+F 3 "" H 7250 2700 50  0001 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 612BD97F
+P 7050 2700
+AR Path="/612BD97F" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD97F" Ref="C26"  Part="1" 
+F 0 "C26" H 7100 2750 50  0000 C BNN
+F 1 "5p1" H 7100 2650 50  0000 C TNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7050 2700 50  0001 C CNN
+F 3 "" H 7050 2700 50  0001 C CNN
+	1    7050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2800 7800 2700
+$Comp
+L Strix:C C?
+U 1 1 612BD986
+P 7800 2800
+AR Path="/612BD986" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD986" Ref="C28"  Part="1" 
+F 0 "C28" V 7804 2858 50  0000 L CNN
+F 1 "6n8" V 7895 2858 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7800 2800 50  0001 C CNN
+F 3 "" H 7800 2800 50  0001 C CNN
+	1    7800 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:GND #PWR?
+U 1 1 612BD98C
+P 7800 3150
+AR Path="/612BD98C" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/612BD98C" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 7670 3190 50  0001 L CNN
+F 1 "GND" H 7800 3050 50  0000 C CNN
+F 2 "" H 7800 3150 50  0001 C CNN
+F 3 "" H 7800 3150 50  0001 C CNN
+	1    7800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2900 7800 3150
+Wire Wire Line
+	9450 2700 9800 2700
+Wire Notes Line
+	8000 2500 8000 3350
+$Comp
+L Strix:GND #PWR?
+U 1 1 612BD918
+P 8550 3150
+AR Path="/612BD918" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/612BD918" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 8420 3190 50  0001 L CNN
+F 1 "GND" H 8550 3050 50  0000 C CNN
+F 2 "" H 8550 3150 50  0001 C CNN
+F 3 "" H 8550 3150 50  0001 C CNN
+	1    8550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2700 9050 2800
+Wire Wire Line
+	8550 2800 8550 2700
+$Comp
+L Strix:L L?
+U 1 1 612BD96C
+P 8750 2700
+AR Path="/612BD96C" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD96C" Ref="L6"  Part="1" 
+F 0 "L6" H 8800 2750 50  0000 C BNN
+F 1 "24n" H 8800 2650 50  0000 C TNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 8750 2700 50  0001 C CNN
+F 3 "" H 8750 2700 50  0001 C CNN
+	1    8750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 612BD972
+P 8550 2800
+AR Path="/612BD972" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD972" Ref="C29"  Part="1" 
+F 0 "C29" V 8554 2858 50  0000 L CNN
+F 1 "3p3" V 8645 2858 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8550 2800 50  0001 C CNN
+F 3 "" H 8550 2800 50  0001 C CNN
+	1    8550 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:C C?
+U 1 1 612BD978
+P 9050 2800
+AR Path="/612BD978" Ref="C?"  Part="1" 
+AR Path="/611291B2/612BD978" Ref="C30"  Part="1" 
+F 0 "C30" V 9054 2858 50  0000 L CNN
+F 1 "3p3" V 9145 2858 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 9050 2800 50  0001 C CNN
+F 3 "" H 9050 2800 50  0001 C CNN
+	1    9050 2800
+	0    1    1    0   
+$EndComp
+Text Notes 8000 3450 0    50   ~ 0
+Lowpass Filter
+$Comp
+L Strix:L L?
+U 1 1 612BD993
+P 8150 2700
+AR Path="/612BD993" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD993" Ref="L5"  Part="1" 
+F 0 "L5" H 8200 2750 50  0000 C BNN
+F 1 "12n" H 8200 2650 50  0000 C TNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 8150 2700 50  0001 C CNN
+F 3 "" H 8150 2700 50  0001 C CNN
+	1    8150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2700 8550 2700
+Wire Wire Line
+	8550 2700 8250 2700
+Connection ~ 8550 2700
+$Comp
+L Strix:L L?
+U 1 1 612BD99B
+P 9350 2700
+AR Path="/612BD99B" Ref="L?"  Part="1" 
+AR Path="/611291B2/612BD99B" Ref="L7"  Part="1" 
+F 0 "L7" H 9400 2750 50  0000 C BNN
+F 1 "12n" H 9400 2650 50  0000 C TNN
+F 2 "Strix:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 9350 2700 50  0001 C CNN
+F 3 "" H 9350 2700 50  0001 C CNN
+	1    9350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2700 9050 2700
+Wire Wire Line
+	9350 2700 9050 2700
+Connection ~ 9050 2700
+Connection ~ 7800 2700
+Wire Wire Line
+	8150 2700 7800 2700
+Wire Notes Line
+	9600 2500 9600 3350
+Wire Notes Line
+	8000 3350 9600 3350
+Wire Notes Line
+	8000 2500 9600 2500
+$Comp
+L Strix:GND #PWR?
+U 1 1 612BD9A9
+P 9050 3150
+AR Path="/612BD9A9" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/612BD9A9" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 8920 3190 50  0001 L CNN
+F 1 "GND" H 9050 3050 50  0000 C CNN
+F 2 "" H 9050 3150 50  0001 C CNN
+F 3 "" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2900 9050 3150
+Wire Wire Line
+	8550 2900 8550 3150
+NoConn ~ 5400 2700
+Text HLabel 6250 4900 2    50   Input ~ 0
+GPS_RX
+Text HLabel 6250 5000 2    50   Input ~ 0
+GPS_TX
+$Comp
+L Strix:3v3 #PWR?
+U 1 1 6124BA4A
+P 4400 4500
+AR Path="/6124BA4A" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/6124BA4A" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 4400 4610 50  0001 L CNN
+F 1 "3v3" H 4400 4600 50  0000 C CNN
+F 2 "" H 4400 4500 50  0001 C CNN
+F 3 "" H 4400 4500 50  0001 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6150 4300 4150 4300
+Text Label 6650 2700 0    50   ~ 0
+TX
+Wire Notes Line
+	2400 2450 2400 2600
+Wire Notes Line
+	1800 2450 2400 2450
+Wire Notes Line
+	1800 2600 1800 2450
+Wire Notes Line
+	2400 2600 1800 2600
+Text Label 2350 2550 2    50   ~ 0
+RADIO_~INT
+Wire Wire Line
+	1700 2550 2350 2550
+Text Label 6050 3000 2    50   ~ 0
+RADIO_~INT
+Wire Wire Line
+	5400 3000 6050 3000
+Text HLabel 9800 2700 2    50   Output ~ 0
+ANT_TLM
+Wire Wire Line
+	5400 2100 6250 2100
+Wire Wire Line
+	6250 3350 6250 2100
+Wire Wire Line
+	5400 2200 6350 2200
+Wire Wire Line
+	6350 3050 6350 2200
+Wire Wire Line
+	5400 2300 6450 2300
+Wire Wire Line
+	6450 2300 6450 2700
+Text HLabel 4050 5300 0    50   Input ~ 0
+GPS_~RESET
+Text HLabel 1700 2550 0    50   Output ~ 0
+RADIO_~INT
+Text HLabel 4050 2900 0    50   Input ~ 0
+RADIO_SDN
+Text HLabel 1700 2850 0    50   Input ~ 0
+RADIO_CLK
+Wire Wire Line
+	4050 2900 4600 2900
+Text HLabel 4050 3300 0    50   Input ~ 0
+RADIO_~CS
+Text HLabel 4050 3200 0    50   Input ~ 0
+RADIO_MOSI
+Text HLabel 4050 3100 0    50   Input ~ 0
+RADIO_MISO
+Text HLabel 4050 3000 0    50   Input ~ 0
+RADIO_SCLK
+Text HLabel 6250 5600 2    50   Output ~ 0
+ANT_GPS
+Text Notes 9650 4150 2    50   ~ 0
+PA Match/Filter (868 MHz)
+Wire Notes Line
+	6550 4200 9700 4200
+Wire Notes Line
+	6550 1800 9700 1800
+Wire Notes Line
+	9700 4200 9700 1800
+Wire Notes Line
+	6550 4200 6550 1800
+NoConn ~ 5750 5300
+NoConn ~ 5750 5200
+NoConn ~ 5750 4700
+NoConn ~ 5750 4600
+NoConn ~ 4550 5500
+$Comp
+L Strix:C C?
+U 1 1 6124BA60
+P 4400 4900
+AR Path="/6124BA60" Ref="C?"  Part="1" 
+AR Path="/611291B2/6124BA60" Ref="C19"  Part="1" 
+F 0 "C19" V 4450 4950 50  0000 L CNN
+F 1 "100n" V 4350 4950 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4400 4900 50  0001 C CNN
+F 3 "" H 4400 4900 50  0001 C CNN
+	1    4400 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 5100 4400 5100
+Wire Wire Line
+	4400 5100 4400 5000
+Wire Wire Line
+	4400 5000 4400 4900
+Connection ~ 4400 5000
+Wire Wire Line
+	4550 5000 4400 5000
+Connection ~ 4400 4900
+Wire Wire Line
+	4400 4900 4550 4900
+Connection ~ 4400 5100
+Wire Wire Line
+	4400 5150 4400 5100
+Wire Wire Line
+	4400 4600 4550 4600
+Wire Wire Line
+	4400 4600 4400 4700
+Wire Wire Line
+	4400 4700 4400 4800
+Connection ~ 4400 4700
+Wire Wire Line
+	4550 4700 4400 4700
+Connection ~ 4400 4800
+Wire Wire Line
+	4400 4800 4550 4800
+Connection ~ 4400 4600
+Wire Wire Line
+	4400 4500 4400 4600
+Wire Wire Line
+	4050 5300 4550 5300
+NoConn ~ 4550 5400
+NoConn ~ 4550 5600
+$Comp
+L Strix:GND #PWR?
+U 1 1 6124BA25
+P 4400 5150
+AR Path="/6124BA25" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/6124BA25" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 4270 5190 50  0001 L CNN
+F 1 "GND" H 4350 5100 50  0000 R BNN
+F 2 "" H 4400 5150 50  0001 C CNN
+F 3 "" H 4400 5150 50  0001 C CNN
+	1    4400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3300 4600 3300
+Wire Wire Line
+	4050 3200 4600 3200
+Wire Wire Line
+	4050 3100 4600 3100
+Wire Wire Line
+	4050 3000 4600 3000
+Wire Notes Line
+	6150 1800 6150 4200
+Wire Notes Line
+	4150 1800 4150 4200
+Wire Notes Line
+	6150 1800 4150 1800
+$Comp
+L Strix:C C20
+U 1 1 611A0644
+P 4450 3700
+F 0 "C20" V 4450 3750 50  0000 L CNN
+F 1 "1u" V 4550 3750 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4450 3700 50  0001 C CNN
+F 3 "" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:C C21
+U 1 1 611A063E
+P 4700 3700
+F 0 "C21" V 4700 3750 50  0000 L CNN
+F 1 "2u2" V 4800 3750 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:C C22
+U 1 1 611A0638
+P 5000 3700
+F 0 "C22" V 5000 3750 50  0000 L CNN
+F 1 "100n" V 5100 3750 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5000 3700 50  0001 C CNN
+F 3 "" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:C C23
+U 1 1 611A0632
+P 5300 3700
+F 0 "C23" V 5300 3750 50  0000 L CNN
+F 1 "220p" V 5400 3750 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Strix:C C24
+U 1 1 611A062C
+P 5600 3700
+F 0 "C24" V 5600 3750 50  0000 L CNN
+F 1 "100p" V 5700 3750 50  0000 L CNN
+F 2 "Strix:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5600 3700 50  0001 C CNN
+F 3 "" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4700 3850 4700 3800
+Wire Wire Line
+	5000 3850 5000 3800
+Wire Wire Line
+	4450 3850 4700 3850
+Connection ~ 4700 3850
+Wire Wire Line
+	5000 3700 5000 3650
+Wire Wire Line
+	4700 3650 4700 3700
+Wire Wire Line
+	4700 3650 4450 3650
+Connection ~ 4700 3650
+Wire Wire Line
+	4450 3650 4450 3700
+Wire Wire Line
+	4450 3650 4450 3600
+Connection ~ 4450 3650
+Wire Wire Line
+	4450 3800 4450 3850
+Wire Wire Line
+	4450 3850 4450 3900
+Connection ~ 4450 3850
+$Comp
+L Strix:GND #PWR053
+U 1 1 611A0616
+P 4450 3900
+F 0 "#PWR053" H 4320 3940 50  0001 L CNN
+F 1 "GND" H 4450 3800 50  0000 C CNN
+F 2 "" H 4450 3900 50  0001 C CNN
+F 3 "" H 4450 3900 50  0001 C CNN
+	1    4450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:3v3 #PWR052
+U 1 1 611A0610
+P 4450 3600
+F 0 "#PWR052" H 4450 3710 50  0001 L CNN
+F 1 "3v3" H 4450 3700 50  0000 C CNN
+F 2 "" H 4450 3600 50  0001 C CNN
+F 3 "" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3800 5300 3850
+Wire Wire Line
+	4700 3850 5000 3850
+Connection ~ 5000 3850
+Wire Wire Line
+	5600 3650 5600 3700
+Wire Wire Line
+	5000 3650 4700 3650
+Wire Wire Line
+	5000 3650 5300 3650
+Connection ~ 5000 3650
+Wire Wire Line
+	5300 3650 5300 3700
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 5600 3650
+Wire Wire Line
+	5600 3850 5600 3800
+Wire Wire Line
+	5300 3850 5000 3850
+Wire Wire Line
+	5300 3850 5600 3850
+Connection ~ 5300 3850
+Wire Wire Line
+	4450 2000 4450 2100
+$Comp
+L Strix:3v3 #PWR050
+U 1 1 611A05FC
+P 4450 2000
+F 0 "#PWR050" H 4450 2110 50  0001 L CNN
+F 1 "3v3" H 4450 2100 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 6100 4150 2    50   ~ 0
+Telemetry Radio
+Wire Notes Line
+	4150 4200 6150 4200
+Text Label 6050 2300 2    50   ~ 0
+TX
+NoConn ~ 5400 2900
+NoConn ~ 5400 2800
+NoConn ~ 5400 2600
+NoConn ~ 5400 2400
+Wire Wire Line
+	4450 2100 4600 2100
+Connection ~ 4450 2100
+Wire Wire Line
+	4450 2200 4450 2100
+Wire Wire Line
+	4600 2200 4450 2200
+$Comp
+L Strix:GND #PWR051
+U 1 1 611A05E3
+P 4450 2500
+F 0 "#PWR051" H 4320 2540 50  0001 L CNN
+F 1 "GND" H 4400 2450 50  0000 R BNN
+F 2 "" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2300 4450 2300
+Wire Wire Line
+	4450 2400 4450 2500
+Wire Wire Line
+	4450 2300 4450 2400
+Connection ~ 4450 2400
+Wire Wire Line
+	4600 2400 4450 2400
+NoConn ~ 4600 2600
+Wire Notes Line
+	4150 4300 4150 5900
+Wire Notes Line
+	4150 5900 6150 5900
+Wire Notes Line
+	6150 4300 6150 5900
+Text Notes 6100 5850 2    50   ~ 0
+GPS Module
+Wire Wire Line
+	5750 4900 6250 4900
+Wire Wire Line
+	5750 5000 6250 5000
+Wire Wire Line
+	8450 5400 8450 5500
+$Comp
+L Strix:GND #PWR?
+U 1 1 6139E5EA
+P 8450 5500
+AR Path="/6139E5EA" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/6139E5EA" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 8320 5540 50  0001 L CNN
+F 1 "GND" H 8450 5400 50  0000 C CNN
+F 2 "" H 8450 5500 50  0001 C CNN
+F 3 "" H 8450 5500 50  0001 C CNN
+	1    8450 5500
+	1    0    0    -1  
+$EndComp
+Text Notes 9650 5700 2    50   ~ 0
+RF Shield
+Wire Notes Line
+	9700 5750 9700 4450
+Wire Notes Line
+	9700 4450 7600 4450
+Wire Notes Line
+	7600 4450 7600 5750
+Wire Notes Line
+	7600 5750 9700 5750
+$Comp
+L Strix:MAX-M8Q U8
+U 1 1 613A31E6
+P 5150 5100
+F 0 "U8" H 5150 5825 50  0000 C CNN
+F 1 "MAX-M8Q" H 5150 5734 50  0000 C CNN
+F 2 "Strix:MAX-M8Q" H 4650 4400 50  0001 L CNN
+F 3 "https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf" H 4650 4300 50  0001 L CNN
+	1    5150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Strix:RF_Shield_Two_Pieces J4
+U 1 1 613A4699
+P 8450 5000
+F 0 "J4" H 9180 5064 50  0000 L CNN
+F 1 "BMI-S-201" H 9180 4973 50  0000 L CNN
+F 2 "Strix:Laird_Technologies_BMI-S-201-F_13.66x12.70mm" H 8450 4900 50  0001 C CNN
+F 3 "~" H 8450 4900 50  0001 C CNN
+	1    8450 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6050 2100 2    50   ~ 0
+RX+
+Text Label 6050 2200 2    50   ~ 0
+RX-
+Text Label 6650 3350 0    50   ~ 0
+RX+
+Text Label 6650 3050 0    50   ~ 0
+RX-
+$Comp
+L Strix:GND #PWR?
+U 1 1 61477B21
+P 2150 3200
+AR Path="/61477B21" Ref="#PWR?"  Part="1" 
+AR Path="/611291B2/61477B21" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 2020 3240 50  0001 L CNN
+F 1 "GND" H 2150 3100 50  0000 C CNN
+F 2 "" H 2150 3200 50  0001 C CNN
+F 3 "" H 2150 3200 50  0001 C CNN
+	1    2150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3100 2150 3200
+Wire Wire Line
+	2150 3000 2150 2850
+$Comp
+L Strix:R R?
+U 1 1 61477B29
+P 2150 3000
+AR Path="/61477B29" Ref="R?"  Part="1" 
+AR Path="/611291B2/61477B29" Ref="R11"  Part="1" 
+F 0 "R11" V 2150 3050 50  0000 L CNN
+F 1 "10k" V 2250 3050 50  0000 L CNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2150 3000 50  0001 C CNN
+F 3 "" H 2150 3000 50  0001 C CNN
+	1    2150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Strix:R R?
+U 1 1 6147A6C8
+P 2000 2850
+AR Path="/6147A6C8" Ref="R?"  Part="1" 
+AR Path="/611291B2/6147A6C8" Ref="R4"  Part="1" 
+F 0 "R4" H 2050 2750 50  0000 C BNN
+F 1 "10k" H 2050 2900 50  0000 C BNN
+F 2 "Strix:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" H 2000 2850 50  0001 C CNN
+F 3 "" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 2850 2150 2850
+Wire Wire Line
+	1700 2850 1900 2850
+Wire Wire Line
+	2150 2850 2950 2850
+Connection ~ 2150 2850
+Text Label 2950 2850 2    50   ~ 0
+RADIO_CLK_1.65V
+Text Label 3450 2700 0    50   ~ 0
+RADIO_CLK_1.65V
+Wire Wire Line
+	3450 2700 4600 2700
+Wire Notes Line
+	3000 3500 1800 3500
+Wire Notes Line
+	1800 3500 1800 2650
+Wire Notes Line
+	1800 2650 3000 2650
+Wire Notes Line
+	3000 2650 3000 3500
+Text Notes 2950 3450 2    50   ~ 0
+Drop XIN Voltage
+$EndSCHEMATC

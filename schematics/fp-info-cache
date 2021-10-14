@@ -1,0 +1,141 @@
+32618369800831
+Strix
+C_0402_1005Metric_Pad0.74x0.62mm_HandSolder
+Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+Strix
+D_0402_1005Metric_Pad0.77x0.64mm_HandSolder
+Diode SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+diode handsolder
+0
+2
+2
+Strix
+InvenSense_QFN-24_3x3mm_P0.4mm
+24-Lead Plastic QFN (3mm x 3mm); Pitch 0.4mm; EP 1.7x1.54mm; for InvenSense motion sensors; keepout area marked (Package see: https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf; See also https://www.invensense.com/wp-content/uploads/2015/02/InvenSense-MEMS-Handling.pdf)
+QFN 0.4
+0
+24
+24
+Strix
+LGA-8_3x5mm_P1.25mm
+LGA-8
+lga land grid array
+0
+8
+8
+Strix
+LQFP-64_10x10mm_P0.5mm
+LQFP, 64 Pin
+LQFP QFP
+0
+64
+64
+Strix
+L_0402_1005Metric_Pad0.77x0.64mm_HandSolder
+Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+inductor handsolder
+0
+2
+2
+Strix
+Laird_Technologies_BMI-S-201-F_13.66x12.70mm
+Laird Technologies BMI-S-201-F Shielding Cabinet Two Piece SMD 13.66x12.70mm (https://assets.lairdtech.com/home/brandworld/files/Board%20Level%20Shields%20Catalog%20Download.pdf)
+Shielding Cabinet
+0
+16
+1
+Strix
+MAX-M8Q
+
+
+0
+18
+18
+Strix
+MAX14787E
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Strix
+Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal
+Molex Nano-Fit Power Connectors, 105313-xx03, 3 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
+connector Molex Nano-Fit top entry
+0
+3
+3
+Strix
+Molex_Nano-Fit_105314-xx06_2x03_P2.50mm_Horizontal
+Molex Nano-Fit Power Connectors, 105314-xx06, 3 Pins per row (http://www.molex.com/pdm_docs/sd/1053141208_sd.pdf), generated with kicad-footprint-generator
+connector Molex Nano-Fit top entry
+0
+6
+6
+Strix
+Molex_Nano-Fit_105314-xx08_2x04_P2.50mm_Horizontal
+Molex Nano-Fit Power Connectors, 105314-xx08, 4 Pins per row (http://www.molex.com/pdm_docs/sd/1053141208_sd.pdf), generated with kicad-footprint-generator
+connector Molex Nano-Fit top entry
+0
+8
+8
+Strix
+MountingHole_3.2mm_M3_Pad_Via
+Mounting Hole 3.2mm, M3
+mounting hole 3.2mm m3
+0
+9
+1
+Strix
+QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias
+QFN, 20 Pin (http://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf#page=164), generated with kicad-footprint-generator ipc_noLead_generator.py
+QFN NoLead
+0
+30
+21
+Strix
+RJ45_Amphenol_RJHSE5380
+Shielded, https://www.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf
+RJ45 8p8c ethernet cat5
+0
+10
+9
+Strix
+R_0402_1005Metric_Pad0.72x0.64mm_HandSolder
+Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+Strix
+SMA-EDGE
+
+
+0
+5
+2
+Strix
+SOIC-8_3.9x4.9mm_P1.27mm
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Strix
+TSSOP-8_4.4x3mm_P0.65mm
+TSSOP, 8 Pin (JEDEC MO-153 Var AA https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+8
+8
+Strix
+Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical
+Tag-Connect programming header; http://www.tag-connect.com/Materials/TC2030-IDC-NL.pdf
+tag connect programming header pogo pins
+0
+6
+6

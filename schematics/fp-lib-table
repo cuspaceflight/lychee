@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name cusf)(type KiCad)(uri ${KIPRJMOD}/lib/cusf.pretty)(options "")(descr "")(disabled))
+  (lib (name Strix)(type KiCad)(uri ${KIPRJMOD}/lib/strix.pretty)(options "")(descr ""))
+)
