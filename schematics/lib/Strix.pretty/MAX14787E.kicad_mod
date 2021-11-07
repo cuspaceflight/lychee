@@ -1,5 +1,4 @@
-(module MAX14787E (layer F.Cu) (tedit 6137CAB9)
-  (descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+(module MAX14787E (layer F.Cu) (tedit 618832B8)
   (tags "SOIC SO")
   (attr smd)
   (fp_text reference REF** (at 0 -3.4) (layer F.SilkS)
@@ -32,7 +31,7 @@
   (pad 3 smd roundrect (at -2.465 0.635) (size 2 0.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25))
   (pad 2 smd roundrect (at -2.465 -0.635) (size 2 0.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25))
   (pad 1 smd roundrect (at -2.465 -1.905) (size 2 0.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25))
-  (model ${KIPRJMOD}/lib/Strix.models/SOIC-8_3.9x4.9mm_P1.27mm.STEP
+  (model ${KIPRJMOD}/lib/Strix.models/MAX14787E.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

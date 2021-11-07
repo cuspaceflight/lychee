@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BMI-S-201
+D Two-piece EMI RF shielding cabinet
+K RF EMI shielding cabinet
+F ~
+$ENDCMP
+#
 $CMP Conn_01x03
 D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -52,18 +58,6 @@ $ENDCMP
 #
 $CMP NC7SZ04
 F https://www.fairchildsemi.com/datasheets/NC/NC7SZ04.pdf
-$ENDCMP
-#
-$CMP RF_Shield_Two_Pieces
-D Two-piece EMI RF shielding cabinet
-K RF EMI shielding cabinet
-F ~
-$ENDCMP
-#
-$CMP RJHSE-5380
-D RJ connector, 8P8C (8 positions 8 connected), Shielded
-K 8P8C RJ female connector
-F ~
 $ENDCMP
 #
 $CMP STM32F405RGT6
