@@ -661,7 +661,7 @@ F 3 "" H 2050 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3950 1700 2    50   ~ 0
-3v3 Power (500mA Max)
+3v3 Power (300mA Max)
 Wire Notes Line
 	4000 650  1900 650 
 Wire Notes Line
@@ -800,7 +800,7 @@ F 3 "" H 3750 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3950 2900 2    50   ~ 0
-1v8 Power (500mA Max)
+1v8 Power (300mA Max)
 Wire Notes Line
 	4000 2950 4000 1850
 Wire Notes Line
@@ -1914,10 +1914,6 @@ Wire Wire Line
 	5100 5300 4000 5300
 Wire Wire Line
 	4000 5400 5100 5400
-Wire Bus Line
-	3900 3600 3900 5300
-Wire Bus Line
-	7400 3800 7400 5300
 $Comp
 L Strix:LFTCXO068373 Y1
 U 1 1 618AD763
@@ -1930,4 +1926,8 @@ F 4 "2627327" H 1450 6550 50  0001 L CNN "Farnell"
 	1    1450 6850
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	3900 3600 3900 5300
+Wire Bus Line
+	7400 3800 7400 5300
 $EndSCHEMATC
