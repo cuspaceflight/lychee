@@ -331,7 +331,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Strix"
+    ]
   },
   "meta": {
     "filename": "flight-computer.kicad_pro",
@@ -427,7 +429,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "../_plot/",
+    "plot_directory": "plot/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -445,6 +447,10 @@
     [
       "00000000-0000-0000-0000-0000611291b2",
       "Radio"
+    ],
+    [
+      "0560d9e6-7a86-479d-84fc-0ec915d62cea",
+      "PSU"
     ]
   ],
   "text_variables": {}
