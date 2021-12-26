@@ -330,7 +330,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Strix"
+    ],
     "pinned_symbol_libs": [
       "Strix"
     ]

@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "Strix")(type "KiCad")(uri "${KIPRJMOD}/lib/Strix.pretty")(options "")(descr ""))
+  (lib (name "Battery")(type "KiCad")(uri "/home/harry/Documents/cusf/battery/schematics/lib/Battery.pretty")(options "")(descr ""))
 )
