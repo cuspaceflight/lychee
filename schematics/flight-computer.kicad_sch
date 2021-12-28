@@ -5502,12 +5502,6 @@
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/189825be-bf92-496f-90cf-19f810cd762c"
       (reference "#PWR046") (unit 1) (value "GND") (footprint "")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/f563d085-c444-4ed8-a281-fa370c930721"
-      (reference "#PWR047") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/799905c4-4da0-4eb2-a63d-f04ebd0e3def"
-      (reference "#PWR048") (unit 1) (value "GND") (footprint "")
-    )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/23e84008-f98c-43b4-9c25-41e6d87d541f"
       (reference "#PWR049") (unit 1) (value "VBATT") (footprint "")
     )
@@ -5537,6 +5531,15 @@
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8ef5fc67-645f-4e40-8bf4-a91927ee2e6e"
       (reference "#PWR058") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/09a7f203-3257-415c-8f84-91a6ae334a8a"
+      (reference "#PWR?") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/5c312bbc-a1c6-4b8d-b9a9-82061fcbccf0"
+      (reference "#PWR?") (unit 1) (value "PGND") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/72e30087-5d67-44be-82d8-b252998130b8"
+      (reference "#PWR?") (unit 1) (value "PGND") (footprint "")
     )
     (path "/cbfce235-eafe-4b95-9991-d5441bd02908"
       (reference "C1") (unit 1) (value "10p") (footprint "Strix:C_0402")
