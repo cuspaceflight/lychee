@@ -57,7 +57,7 @@
   (pad "" smd roundrect (at -0.65 0.65) (size 1.13 1.13) (layers F.Paste) (roundrect_rratio 0.221239))
   (pad "" smd roundrect (at 0.65 -0.65) (size 1.13 1.13) (layers F.Paste) (roundrect_rratio 0.221239))
   (pad "" smd roundrect (at 0.65 0.65) (size 1.13 1.13) (layers F.Paste) (roundrect_rratio 0.221239))
-  (model ${KIPRJMOD}/lib/Strix.models/Si4463.STEP
+  (model ${KIPRJMOD}/../lib/Lychee.models/Si4463.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

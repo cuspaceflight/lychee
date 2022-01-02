@@ -52,7 +52,7 @@
   (pad "4" thru_hole circle (at 2.5 2.5) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask) (tstamp 5778953d-c3f1-4eab-88e0-47485d04ab27))
   (pad "5" thru_hole circle (at 0 5) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask) (tstamp 91ab3f4d-d809-4607-a1fa-cd4bd6a0726c))
   (pad "6" thru_hole circle (at 2.5 5) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask) (tstamp 067fb9a1-5278-4e90-ad48-93993d2ed931))
-  (model "${KIPRJMOD}/lib/Strix.models/Molex_Nano-Fit_105314-1106.STEP"
+  (model "${KIPRJMOD}/../lib/Lychee.models/Molex_Nano-Fit_105314-1106.STEP"
     (offset (xyz 8.65 -2.5 3.3))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 -90))

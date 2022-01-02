@@ -37,7 +37,7 @@
   (pad "6" smd roundrect (at 2.475 0.635) (size 1.95 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp f3133283-2ba1-435a-8051-3e7bcebe88e5))
   (pad "7" smd roundrect (at 2.475 -0.635) (size 1.95 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp bcc12a98-eb9f-4ecf-86e7-c4ff846ba7b6))
   (pad "8" smd roundrect (at 2.475 -1.905) (size 1.95 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp d92b4e72-7a6b-41d7-a011-8abdced12936))
-  (model "${KIPRJMOD}/lib/Strix.models/MAX604.STEP"
+  (model "${KIPRJMOD}/../lib/Lychee.models/MAX604.STEP"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

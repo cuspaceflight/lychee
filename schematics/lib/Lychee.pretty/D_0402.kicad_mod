@@ -29,7 +29,7 @@
   (fp_line (start -0.4 0.25) (end -0.4 -0.25) (layer "F.Fab") (width 0.1) (tstamp fc83cd71-1198-4019-87a1-dc154bceead3))
   (pad "1" smd roundrect (at -0.5725 0) (size 0.765 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 725cdf26-4b92-46db-bca9-10d930002dda))
   (pad "2" smd roundrect (at 0.5725 0) (size 0.765 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 3e3d55c8-e0ea-48fb-8421-a84b7cb7055b))
-  (model "${KIPRJMOD}/lib/Strix.models/D_0402.STEP"
+  (model "${KIPRJMOD}/../lib/Lychee.models/D_0402.STEP"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

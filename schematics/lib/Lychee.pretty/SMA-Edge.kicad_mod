@@ -47,7 +47,7 @@
     (zone_connect 2) (tstamp 725cdf26-4b92-46db-bca9-10d930002dda))
   (pad "2" smd rect (at 4.375 0) (size 2.4 5) (layers "B.Cu" "B.Paste" "B.Mask")
     (zone_connect 2) (tstamp 7acd513a-187b-4936-9f93-2e521ce33ad5))
-  (model "${KIPRJMOD}/lib/Strix.models/SMA-EDGE.STEP"
+  (model "${KIPRJMOD}/../lib/Lychee.models/SMA-EDGE.STEP"
     (offset (xyz 0 3 0.3))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 180 -90))
