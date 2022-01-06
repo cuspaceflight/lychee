@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.254
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -106,7 +106,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.19999999999999998,
+        "min_clearance": 0.125,
         "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.35,
         "min_hole_to_hole": 0.5,
@@ -114,13 +114,15 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.19999999999999998,
         "min_via_diameter": 0.39999999999999997,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
+        0.18,
+        0.2,
         0.3,
         0.4,
         0.5,
@@ -385,11 +387,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "50Ohm",
-        "nets": [
-          "/Radio/ANT_GPS",
-          "/Radio/ANT_TLM",
-          "/Radio/TX"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.35,
@@ -407,17 +405,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "nets": [
-          "/PSU/BATT_MON",
-          "/PSU/CHG+",
-          "/PSU/SENSE",
-          "/PSU/VCC_CHG",
-          "/PSU/V_SW",
-          "1v8",
-          "3v3",
-          "GND",
-          "VBATT"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,

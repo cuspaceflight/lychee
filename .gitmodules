@@ -1,0 +1,3 @@
+[submodule "schematics/lib"]
+	path = schematics/lib
+	url = https://github.com/cuspaceflight/strix-symbols
