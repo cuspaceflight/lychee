@@ -139,51 +139,6 @@
         )
       )
     )
-    (symbol "Strix:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (id 0) (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02" (id 1) (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Strix:Conn_01x03" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1761,9 +1716,6 @@
   (junction (at 114.3 91.44) (diameter 0) (color 0 0 0 0)
     (uuid c24d6ac8-802d-4df3-a210-9cb1f693e865)
   )
-  (junction (at 36.83 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid c367c2b7-4498-46cc-a4c8-5c11c704feaa)
-  )
   (junction (at 250.19 152.4) (diameter 0) (color 0 0 0 0)
     (uuid c4db7b88-d9e7-4f1f-ad8f-c797ccc5e9e6)
   )
@@ -1775,9 +1727,6 @@
   )
   (junction (at 43.18 25.4) (diameter 0) (color 0 0 0 0)
     (uuid cb9de76d-b201-4ac5-9a05-c7b9f44fd54b)
-  )
-  (junction (at 31.75 36.83) (diameter 0) (color 0 0 0 0)
-    (uuid ccedef44-f469-4d4c-a845-ad305552c7ba)
   )
   (junction (at 114.3 81.28) (diameter 0) (color 0 0 0 0)
     (uuid cf386a39-fc62-49dd-8ec5-e044f6bd67ce)
@@ -1839,6 +1788,7 @@
   (no_connect (at 154.94 144.78) (uuid 2e0a9f64-1b78-4597-8d50-d12d2268a95a))
   (no_connect (at 129.54 139.7) (uuid 4ba06b66-7669-4c70-b585-f5d4c9c33527))
   (no_connect (at 154.94 66.04) (uuid 60ff6322-62e2-4602-9bc0-7a0f0a5ecfbf))
+  (no_connect (at 154.94 114.3) (uuid 6454fd59-35b0-41f2-a983-54779fb796a9))
   (no_connect (at 252.73 142.24) (uuid 84113453-3112-4d0c-a848-d26db330487a))
   (no_connect (at 154.94 139.7) (uuid 92505cfe-fd46-4fc5-a84c-990d2acab511))
   (no_connect (at 154.94 142.24) (uuid 9aaeec6e-84fe-4644-b0bc-5de24626ff48))
@@ -1953,10 +1903,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 11e01882-a9be-4c18-82b5-ec71b4b7934f)
   )
-  (wire (pts (xy 36.83 39.37) (xy 48.26 39.37))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 12615502-7d47-419e-9e1f-5e48a59843bb)
-  )
   (wire (pts (xy 114.3 129.54) (xy 129.54 129.54))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 1291629c-7521-4223-936a-5b2ca64745fd)
@@ -1996,10 +1942,6 @@
   (wire (pts (xy 193.04 31.75) (xy 208.28 31.75))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 180245d9-4a3f-4d1b-adcc-b4eafac722e0)
-  )
-  (wire (pts (xy 30.48 36.83) (xy 31.75 36.83))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1820eced-acc4-4b3c-91dd-c0fabfa06781)
   )
   (wire (pts (xy 193.04 68.58) (xy 208.28 68.58))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2093,10 +2035,6 @@
     (uuid 2b64d2cb-d62a-4762-97ea-f1b0d4293c4f)
   )
 
-  (wire (pts (xy 171.45 114.3) (xy 154.94 114.3))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 2ce2dea6-ebd1-4663-9ba5-b5cd97836316)
-  )
   (wire (pts (xy 52.07 184.15) (xy 67.31 184.15))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 2d01096d-765c-4a81-b749-b3cd89d44018)
@@ -2116,10 +2054,6 @@
   (wire (pts (xy 250.19 152.4) (xy 250.19 151.13))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 2f022a4e-59a5-471e-86fe-32565d0318b3)
-  )
-  (wire (pts (xy 30.48 39.37) (xy 36.83 39.37))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 2fc53fda-8014-4ad1-b992-6e152f658f12)
   )
   (wire (pts (xy 86.36 187.96) (xy 86.36 189.23))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2237,11 +2171,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 41c365fa-3d50-4050-8aef-1622d6a45dc7)
   )
-  (polyline (pts (xy 16.51 34.29) (xy 16.51 48.26))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 42d61b2d-eea4-490b-85ee-7c993fbd36e4)
-  )
-
   (wire (pts (xy 52.07 105.41) (xy 52.07 115.57))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 42ff72e4-ad4f-41b3-b31e-b4736309b04a)
@@ -2385,10 +2314,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 5f31b97b-d794-46d6-bbd9-7a5638bcf704)
   )
-  (wire (pts (xy 31.75 36.83) (xy 31.75 38.1))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5fd194e9-ac91-4c1e-8f70-803250d3b0a4)
-  )
   (wire (pts (xy 237.49 111.76) (xy 237.49 146.05))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6034334c-db9f-4b2e-8a53-12e0106f3682)
@@ -2461,10 +2386,6 @@
   (wire (pts (xy 119.38 97.79) (xy 127 97.79))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6a0919c2-460c-4229-b872-14e318e1ba8b)
-  )
-  (polyline (pts (xy 45.72 48.26) (xy 45.72 34.29))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 6d866fb6-7358-4a4d-bd61-8603f9a5ca2a)
   )
   (polyline (pts (xy 16.51 160.02) (xy 65.405 160.02))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2639,11 +2560,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 8aff0f38-92a8-45ec-b106-b185e93ca3fd)
   )
-  (polyline (pts (xy 16.51 48.26) (xy 45.72 48.26))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 8b813baa-66cc-467f-a625-361fcbb201f7)
-  )
-
   (wire (pts (xy 214.63 116.84) (xy 214.63 119.38))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 8d900cb9-5976-4c28-a780-96efe0a4d5e0)
@@ -2940,11 +2856,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid bb4b1afc-c46e-451d-8dad-36b7dec82f26)
   )
-
-  (wire (pts (xy 81.28 38.1) (xy 69.85 38.1))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid bc56adbf-690a-4ea2-a9b9-9de1a72a97fa)
-  )
   (polyline (pts (xy 280.67 102.87) (xy 280.67 160.02))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid bc9a2113-4268-4d92-81b2-114607cf73b1)
@@ -3128,18 +3039,9 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid dca59867-131f-42dd-a296-064891080b97)
   )
-  (polyline (pts (xy 45.72 34.29) (xy 16.51 34.29))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid dd738f47-0644-4c1a-868c-8b579298a5d8)
-  )
-
   (wire (pts (xy 129.54 124.46) (xy 114.3 124.46))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid dda1e6ca-91ec-4136-b90b-3c54d79454b9)
-  )
-  (wire (pts (xy 31.75 36.83) (xy 48.26 36.83))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid deb4d094-2516-485a-8705-f2a6181a46c8)
   )
   (wire (pts (xy 110.49 180.34) (xy 127 180.34))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -3245,10 +3147,6 @@
   (wire (pts (xy 208.28 62.23) (xy 193.04 62.23))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f203116d-f256-4611-a03e-9536bbedaf2f)
-  )
-  (wire (pts (xy 36.83 38.1) (xy 36.83 39.37))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f2e256e2-7f42-4df0-b33a-31669c15145b)
   )
   (polyline (pts (xy 67.31 125.73) (xy 97.79 125.73))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -3386,19 +3284,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f4fad10b-907b-4a53-9fb1-86939b837e91)
   )
-  (text "8.9 - 22V DC\nCharger Input" (at 17.78 46.99 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f8a5be46-27e2-4a84-a6ad-b33b8915de5e)
-  )
   (text "Antennas (SMA)" (at 247.65 46.99 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fbe8ebfc-2a8e-4eb8-85c5-38ddeaa5dd00)
   )
 
-  (label "CHG_SDN" (at 81.28 38.1 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 01ff8c9e-30be-4467-bfbd-141d5111b880)
-  )
   (label "SPI3_MOSI" (at 17.78 123.19 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 03b48512-a391-4213-a9f6-8597ca2c7eb7)
@@ -3599,10 +3489,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b68fb755-a6f4-4cdc-81fa-00c58dff8c81)
   )
-  (label "CHG_SDN" (at 171.45 114.3 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b92d1d71-1df4-4cdf-a862-28db75c2f2c6)
-  )
   (label "I2C1_SDA" (at 17.78 102.87 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bf6d774d-ff73-48bb-94e0-6568c43d2436)
@@ -3695,7 +3581,7 @@
   (symbol (lib_id "Strix:GND") (at 264.16 29.21 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060d03c1d)
-    (property "Reference" "#PWR0116" (id 0) (at 260.858 28.194 0)
+    (property "Reference" "#PWR0101" (id 0) (at 260.858 28.194 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 264.16 31.75 0))
@@ -3711,7 +3597,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 257.81 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060d1b9af)
-    (property "Reference" "D113" (id 0) (at 257.81 27.94 0)
+    (property "Reference" "D103" (id 0) (at 257.81 27.94 0)
       (effects (font (size 1.27 1.27)) (justify top))
     )
     (property "Value" "D_ESD" (id 1) (at 256.54 29.21 0)
@@ -3733,7 +3619,7 @@
   (symbol (lib_id "Strix:GND") (at 264.16 40.64 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060d652ae)
-    (property "Reference" "#PWR0117" (id 0) (at 260.858 39.624 0)
+    (property "Reference" "#PWR0102" (id 0) (at 260.858 39.624 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 264.16 43.18 0))
@@ -3749,7 +3635,7 @@
   (symbol (lib_id "Strix:3v3") (at 127 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c43c)
-    (property "Reference" "#PWR0113" (id 0) (at 127 56.896 0)
+    (property "Reference" "#PWR0103" (id 0) (at 127 56.896 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 127 57.15 0))
@@ -3765,7 +3651,7 @@
   (symbol (lib_id "Strix:C") (at 115.57 91.44 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c46a)
-    (property "Reference" "C109" (id 0) (at 113.03 91.44 0)
+    (property "Reference" "C108" (id 0) (at 113.03 91.44 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2µ2" (id 1) (at 106.68 91.44 0)
@@ -3787,7 +3673,7 @@
   (symbol (lib_id "Strix:C") (at 115.57 93.98 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c471)
-    (property "Reference" "C110" (id 0) (at 113.03 93.98 0)
+    (property "Reference" "C109" (id 0) (at 113.03 93.98 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2µ2" (id 1) (at 106.68 93.98 0)
@@ -3809,7 +3695,7 @@
   (symbol (lib_id "Strix:C") (at 88.9 76.2 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c486)
-    (property "Reference" "C108" (id 0) (at 88.9 80.01 90))
+    (property "Reference" "C107" (id 0) (at 88.9 80.01 90))
     (property "Value" "100n" (id 1) (at 88.9 82.55 90))
     (property "Footprint" "Strix:C_0402" (id 2) (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3845,7 +3731,7 @@
   (symbol (lib_id "Strix:C") (at 76.2 76.2 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c494)
-    (property "Reference" "C102" (id 0) (at 76.2 80.01 90))
+    (property "Reference" "C105" (id 0) (at 76.2 80.01 90))
     (property "Value" "100n" (id 1) (at 76.2 82.55 90))
     (property "Footprint" "Strix:C_0402" (id 2) (at 76.2 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3863,7 +3749,7 @@
   (symbol (lib_id "Strix:C") (at 88.9 66.04 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c49b)
-    (property "Reference" "C107" (id 0) (at 88.9 57.15 90))
+    (property "Reference" "C103" (id 0) (at 88.9 57.15 90))
     (property "Value" "100n" (id 1) (at 88.9 59.69 90))
     (property "Footprint" "Strix:C_0402" (id 2) (at 88.9 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3881,7 +3767,7 @@
   (symbol (lib_id "Strix:C") (at 82.55 66.04 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c4a2)
-    (property "Reference" "C105" (id 0) (at 82.55 57.15 90))
+    (property "Reference" "C102" (id 0) (at 82.55 57.15 90))
     (property "Value" "100n" (id 1) (at 82.55 59.69 90))
     (property "Footprint" "Strix:C_0402" (id 2) (at 82.55 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3917,7 +3803,7 @@
   (symbol (lib_id "Strix:C") (at 119.38 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060e7c4b0)
-    (property "Reference" "C112" (id 0) (at 120.65 67.31 0))
+    (property "Reference" "C104" (id 0) (at 120.65 67.31 0))
     (property "Value" "4µ7" (id 1) (at 120.65 69.85 0))
     (property "Footprint" "Strix:C_0402" (id 2) (at 119.38 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3951,7 +3837,7 @@
   (symbol (lib_id "Strix:GND") (at 168.91 186.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006136fa42)
-    (property "Reference" "#PWR0114" (id 0) (at 165.608 185.674 0)
+    (property "Reference" "#PWR0116" (id 0) (at 165.608 185.674 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 168.91 189.23 0))
@@ -3967,7 +3853,7 @@
   (symbol (lib_id "Strix:STM32F405RGT6") (at 142.24 109.22 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006138d4b0)
-    (property "Reference" "U102" (id 0) (at 142.24 57.785 0))
+    (property "Reference" "U101" (id 0) (at 142.24 57.785 0))
     (property "Value" "STM32F405RGT6" (id 1) (at 142.24 60.0964 0))
     (property "Footprint" "Strix:STM32F405RGT6" (id 2) (at 132.08 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
@@ -4070,7 +3956,7 @@
   (symbol (lib_id "Strix:C") (at 115.57 99.06 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000613d0152)
-    (property "Reference" "C111" (id 0) (at 113.03 99.06 0)
+    (property "Reference" "C110" (id 0) (at 113.03 99.06 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (id 1) (at 106.68 99.06 0)
@@ -4092,7 +3978,7 @@
   (symbol (lib_id "Strix:GND") (at 114.3 102.87 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006142011e)
-    (property "Reference" "#PWR0111" (id 0) (at 110.998 101.854 0)
+    (property "Reference" "#PWR0105" (id 0) (at 110.998 101.854 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 113.03 104.14 0)
@@ -4106,7 +3992,7 @@
   (symbol (lib_id "Strix:GND") (at 34.29 187.96 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061425cd9)
-    (property "Reference" "#PWR0104" (id 0) (at 30.988 186.944 0)
+    (property "Reference" "#PWR0117" (id 0) (at 30.988 186.944 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 34.29 190.5 0))
@@ -4118,7 +4004,7 @@
   (symbol (lib_id "Strix:3v3") (at 34.29 172.72 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061425cdf)
-    (property "Reference" "#PWR0103" (id 0) (at 34.29 169.926 0)
+    (property "Reference" "#PWR0113" (id 0) (at 34.29 169.926 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 34.29 170.18 0))
@@ -4182,7 +4068,7 @@
   (symbol (lib_id "Strix:MAX14787E") (at 44.45 180.34 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618d7b14)
-    (property "Reference" "U101" (id 0) (at 44.45 168.91 0))
+    (property "Reference" "U102" (id 0) (at 44.45 168.91 0))
     (property "Value" "MAX14787E" (id 1) (at 44.45 171.45 0))
     (property "Footprint" "Strix:MAX14787E" (id 2) (at 39.37 190.5 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
@@ -4206,7 +4092,7 @@
   (symbol (lib_id "Strix:R") (at 53.34 177.8 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618d7b1a)
-    (property "Reference" "R101" (id 0) (at 54.61 171.45 0))
+    (property "Reference" "R104" (id 0) (at 54.61 171.45 0))
     (property "Value" "120" (id 1) (at 54.61 172.72 0)
       (effects (font (size 1.27 1.27)) (justify top))
     )
@@ -4216,6 +4102,9 @@
     (property "Datasheet" "" (id 3) (at 53.34 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2447103" (id 4) (at 53.34 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d22f8c08-7c7a-481b-96ff-cad6b4c95453))
     (pin "2" (uuid 773bdc81-beec-4a4b-9485-1c1dd15c6e5a))
   )
@@ -4223,7 +4112,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 250.19 148.59 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 062bbb8b-bb25-4f1a-b150-3ae40f70064e)
-    (property "Reference" "D112" (id 0) (at 250.19 153.67 90)
+    (property "Reference" "D107" (id 0) (at 250.19 153.67 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 247.65 149.86 0)
@@ -4245,7 +4134,7 @@
   (symbol (lib_id "Strix:GND") (at 71.12 149.86 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 0f3ffdc9-7aa3-4cee-8b6c-efc7e0ae099d)
-    (property "Reference" "#PWR0107" (id 0) (at 67.818 148.844 0)
+    (property "Reference" "#PWR0109" (id 0) (at 67.818 148.844 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 71.12 152.4 0))
@@ -4257,7 +4146,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 121.92 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1d833786-2802-42f0-ba37-6c65c859ff44)
-    (property "Reference" "D108" (id 0) (at 121.92 190.5 90)
+    (property "Reference" "D112" (id 0) (at 121.92 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 119.38 186.69 0)
@@ -4279,7 +4168,7 @@
   (symbol (lib_id "Strix:GND") (at 275.59 154.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 235628b4-c58a-4855-b7ad-b98fe8ca084e)
-    (property "Reference" "#PWR0118" (id 0) (at 272.288 153.924 0)
+    (property "Reference" "#PWR0112" (id 0) (at 272.288 153.924 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 275.59 157.48 0))
@@ -4295,7 +4184,7 @@
   (symbol (lib_id "Strix:C") (at 81.28 113.03 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 44d1a38b-b9fc-430b-8721-5eb9a958aec2)
-    (property "Reference" "C104" (id 0) (at 82.55 114.3 0)
+    (property "Reference" "C112" (id 0) (at 82.55 114.3 0)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "10p" (id 1) (at 82.55 116.84 0)
@@ -4307,6 +4196,9 @@
     (property "Datasheet" "" (id 3) (at 81.28 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2494183" (id 4) (at 81.28 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3ee7d0aa-c6bc-4534-8626-9963bf751361))
     (pin "2" (uuid 12c3e9f0-7592-41a8-940f-98d38e9b1b21))
   )
@@ -4314,7 +4206,7 @@
   (symbol (lib_id "Strix:GND") (at 104.14 190.5 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 452481c5-f875-416a-9a80-ba8a84c0bb9e)
-    (property "Reference" "#PWR0110" (id 0) (at 100.838 189.484 0)
+    (property "Reference" "#PWR0118" (id 0) (at 100.838 189.484 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 104.14 193.04 0))
@@ -4326,7 +4218,7 @@
   (symbol (lib_id "Strix:R") (at 88.9 110.49 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 482ee53c-25d7-4d65-bfd1-8b5c28ae803b)
-    (property "Reference" "R102" (id 0) (at 90.17 111.76 0)
+    (property "Reference" "R101" (id 0) (at 90.17 111.76 0)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "100" (id 1) (at 90.17 114.3 0)
@@ -4338,6 +4230,9 @@
     (property "Datasheet" "" (id 3) (at 88.9 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2447095" (id 4) (at 88.9 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ce18636a-1874-405b-8457-37d1d6c98645))
     (pin "2" (uuid 78afe5d1-34a5-45ec-be11-c97195712020))
   )
@@ -4345,7 +4240,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 257.81 38.1 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 517f8b45-a412-4a84-97f0-bbde03a49b71)
-    (property "Reference" "D114" (id 0) (at 257.81 39.37 0)
+    (property "Reference" "D104" (id 0) (at 257.81 39.37 0)
       (effects (font (size 1.27 1.27)) (justify top))
     )
     (property "Value" "D_ESD" (id 1) (at 256.54 40.64 0)
@@ -4367,7 +4262,7 @@
   (symbol (lib_id "Strix:R") (at 219.71 111.76 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 53f1a01a-ab00-470b-871b-16512f4395a9)
-    (property "Reference" "R104" (id 0) (at 220.98 107.95 0))
+    (property "Reference" "R102" (id 0) (at 220.98 107.95 0))
     (property "Value" "10k" (id 1) (at 220.98 109.22 0)
       (effects (font (size 1.27 1.27)) (justify top))
     )
@@ -4377,6 +4272,9 @@
     (property "Datasheet" "" (id 3) (at 219.71 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2447096" (id 4) (at 219.71 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8b9b5d72-71b4-4021-b022-a0b89d09b3c8))
     (pin "2" (uuid c616c307-11b3-4484-aae7-e92f9aa2bd6e))
   )
@@ -4384,7 +4282,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 91.44 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5b3b6d37-3aec-4f75-ab41-29e50f33663c)
-    (property "Reference" "D106" (id 0) (at 91.44 190.5 90)
+    (property "Reference" "D110" (id 0) (at 91.44 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 88.9 186.69 0)
@@ -4406,7 +4304,7 @@
   (symbol (lib_id "Strix:GND") (at 52.07 151.13 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5e239642-16e9-446d-b674-ec9ea29879a6)
-    (property "Reference" "#PWR0105" (id 0) (at 48.768 150.114 0)
+    (property "Reference" "#PWR0111" (id 0) (at 48.768 150.114 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 52.07 153.67 0))
@@ -4418,7 +4316,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 86.36 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 62f0bfbc-cb6f-4bd8-b7f7-58d0b035da2d)
-    (property "Reference" "D105" (id 0) (at 86.36 190.5 90)
+    (property "Reference" "D109" (id 0) (at 86.36 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 83.82 186.69 0)
@@ -4440,7 +4338,7 @@
   (symbol (lib_id "Strix:Coax") (at 270.51 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 658a1945-65ec-476a-97c4-8389abeee50e)
-    (property "Reference" "J107" (id 0) (at 273.05 23.3679 0)
+    (property "Reference" "J102" (id 0) (at 273.05 23.3679 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GPS" (id 1) (at 273.05 25.9079 0)
@@ -4462,7 +4360,7 @@
   (symbol (lib_id "Strix:GND") (at 214.63 119.38 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 66c67849-2036-48e3-ab23-98c35d94cbef)
-    (property "Reference" "#PWR0115" (id 0) (at 211.328 118.364 0)
+    (property "Reference" "#PWR0107" (id 0) (at 211.328 118.364 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 214.63 121.92 0))
@@ -4478,7 +4376,7 @@
   (symbol (lib_id "Strix:Conn_02x20") (at 39.37 123.19 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 733357d6-262c-40f3-b8ba-31a42dd1fe2a)
-    (property "Reference" "J103" (id 0) (at 40.64 96.52 0))
+    (property "Reference" "J104" (id 0) (at 40.64 96.52 0))
     (property "Value" "Expansion Slot" (id 1) (at 40.64 152.4 0))
     (property "Footprint" "Strix:Header_RaspberryPi" (id 2) (at 39.37 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4531,7 +4429,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 116.84 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 8bd7e5db-f6a0-4982-8e76-3b852da965d0)
-    (property "Reference" "D107" (id 0) (at 116.84 190.5 90)
+    (property "Reference" "D111" (id 0) (at 116.84 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 114.3 186.69 0)
@@ -4577,7 +4475,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 34.29 24.13 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 9f5b92df-a9fc-40a8-958b-14377f29c85a)
-    (property "Reference" "D101" (id 0) (at 34.29 26.67 0))
+    (property "Reference" "D102" (id 0) (at 34.29 26.67 0))
     (property "Value" "D_ESD" (id 1) (at 33.02 21.59 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
@@ -4597,7 +4495,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 127 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a39c6df7-9ef6-49f1-87cc-b278a6adebfe)
-    (property "Reference" "D109" (id 0) (at 127 190.5 90)
+    (property "Reference" "D113" (id 0) (at 127 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 124.46 186.69 0)
@@ -4619,7 +4517,7 @@
   (symbol (lib_id "Strix:3v3") (at 71.12 134.62 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ad546fa7-8119-4b2a-8bf5-433ccd9163b9)
-    (property "Reference" "#PWR0106" (id 0) (at 71.12 131.826 0)
+    (property "Reference" "#PWR0108" (id 0) (at 71.12 131.826 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 71.12 132.08 0))
@@ -4635,7 +4533,7 @@
   (symbol (lib_id "Strix:GND") (at 76.2 107.95 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid af48eff0-bc84-4fc8-9853-b00363b29775)
-    (property "Reference" "#PWR0108" (id 0) (at 77.216 104.648 0)
+    (property "Reference" "#PWR0106" (id 0) (at 77.216 104.648 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 72.39 107.95 90))
@@ -4647,7 +4545,7 @@
   (symbol (lib_id "Strix:Coax") (at 270.51 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b21f5d68-c63b-407e-9217-7610aaac9c33)
-    (property "Reference" "J108" (id 0) (at 273.05 34.7979 0)
+    (property "Reference" "J103" (id 0) (at 273.05 34.7979 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TELEM" (id 1) (at 273.05 37.3379 0)
@@ -4669,7 +4567,7 @@
   (symbol (lib_id "Strix:3v3") (at 91.44 172.72 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b33d75d5-1213-4385-b5fd-abbfd271b911)
-    (property "Reference" "#PWR0109" (id 0) (at 91.44 169.926 0)
+    (property "Reference" "#PWR0114" (id 0) (at 91.44 169.926 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 91.44 170.18 0))
@@ -4685,7 +4583,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 40.64 21.59 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c3b69905-b979-4ca9-8e95-d758dcfb4921)
-    (property "Reference" "D103" (id 0) (at 40.64 26.67 0))
+    (property "Reference" "D101" (id 0) (at 40.64 26.67 0))
     (property "Value" "D_ESD" (id 1) (at 39.37 19.05 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
@@ -4715,6 +4613,9 @@
     (property "Datasheet" "" (id 3) (at 214.63 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2447096" (id 4) (at 214.63 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid c7d60e8e-0425-4fa1-8fb4-b90d76a3ac3d))
     (pin "2" (uuid b4ddc92b-6bd0-4a0e-994f-b64a09aebc1a))
   )
@@ -4722,7 +4623,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 81.28 185.42 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c9ac9432-79fb-4243-93eb-f96d2d6fda05)
-    (property "Reference" "D104" (id 0) (at 81.28 190.5 90)
+    (property "Reference" "D108" (id 0) (at 81.28 190.5 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 78.74 186.69 0)
@@ -4744,7 +4645,7 @@
   (symbol (lib_id "Strix:C") (at 81.28 102.87 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cbfce235-eafe-4b95-9991-d5441bd02908)
-    (property "Reference" "C103" (id 0) (at 82.55 99.06 0)
+    (property "Reference" "C111" (id 0) (at 82.55 99.06 0)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "10p" (id 1) (at 82.55 101.6 0)
@@ -4756,6 +4657,9 @@
     (property "Datasheet" "" (id 3) (at 81.28 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Farnell" "2494183" (id 4) (at 81.28 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0327ccf1-a12e-4560-b94b-11ab1e808be8))
     (pin "2" (uuid 8504bc50-f40b-40b6-8dc9-879745250797))
   )
@@ -4763,7 +4667,7 @@
   (symbol (lib_id "Strix:3v3") (at 116.84 172.72 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cf346a3e-b09a-457d-9012-775d9a126549)
-    (property "Reference" "#PWR0112" (id 0) (at 116.84 169.926 0)
+    (property "Reference" "#PWR0115" (id 0) (at 116.84 169.926 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 116.84 170.18 0))
@@ -4779,7 +4683,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 237.49 148.59 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d0ad3752-1409-4e24-8849-3514abf1a71c)
-    (property "Reference" "D110" (id 0) (at 237.49 153.67 90)
+    (property "Reference" "D105" (id 0) (at 237.49 153.67 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 234.95 149.86 0)
@@ -4798,29 +4702,10 @@
     (pin "2" (uuid 75f133ab-f8c4-449c-8d24-5ce2ef20c5f5))
   )
 
-  (symbol (lib_id "Strix:Conn_01x02") (at 25.4 36.83 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid d65ffd3d-864a-44bc-a867-54eb772052d5)
-    (property "Reference" "J102" (id 0) (at 22.86 36.83 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CHG" (id 1) (at 22.86 39.37 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Strix:Molex_Nano-Fit_105313-1102" (id 2) (at 25.4 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 25.4 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9eb60320-f7d5-4342-a3f5-193eb7b33fe3))
-    (pin "2" (uuid 9713761a-f9ce-45ef-a843-fe36299b7ab0))
-  )
-
   (symbol (lib_id "Strix:3v3") (at 31.75 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d8160bda-07f6-4872-8981-807a23f49eeb)
-    (property "Reference" "#PWR0102" (id 0) (at 31.75 94.996 0)
+    (property "Reference" "#PWR0104" (id 0) (at 31.75 94.996 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "3v3" (id 1) (at 31.75 95.25 0))
@@ -4836,12 +4721,15 @@
   (symbol (lib_id "Strix:Conn_02x04") (at 102.87 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e263bf58-f20f-4eb7-9ec5-a88cf27bf968)
-    (property "Reference" "J105" (id 0) (at 104.14 168.91 0))
+    (property "Reference" "J107" (id 0) (at 104.14 168.91 0))
     (property "Value" "BLACKBOX" (id 1) (at 104.14 171.45 0))
     (property "Footprint" "Strix:Molex_Nano-Fit_105314-1108" (id 2) (at 102.87 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 102.87 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "RS" "162-3692" (id 4) (at 102.87 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5d80873e-7122-4983-a780-063cd64ef575))
@@ -4854,30 +4742,10 @@
     (pin "8" (uuid a5f64163-d047-48d7-87d4-b6a8abd126ce))
   )
 
-  (symbol (lib_id "Strix:D_ESD") (at 34.29 38.1 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid e26e50c4-cf70-4f87-928a-0e6d36a91c09)
-    (property "Reference" "D102" (id 0) (at 34.29 40.64 0))
-    (property "Value" "D_ESD" (id 1) (at 33.02 35.56 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Strix:D_0402" (id 2) (at 33.02 33.02 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 31.75 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Farnell" "2368169" (id 4) (at 33.02 30.48 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (pin "1" (uuid 77fc2588-3f37-4c4c-a2ab-c2956b62aba9))
-    (pin "2" (uuid b617f44c-5716-4a19-81f6-cb467e27b708))
-  )
-
   (symbol (lib_id "Strix:GND") (at 29.21 151.13 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e387e93e-5563-43d9-8d42-192e4d918954)
-    (property "Reference" "#PWR0101" (id 0) (at 25.908 150.114 0)
+    (property "Reference" "#PWR0110" (id 0) (at 25.908 150.114 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "GND" (id 1) (at 29.21 153.67 0))
@@ -4889,7 +4757,7 @@
   (symbol (lib_id "Strix:USB_C") (at 267.97 127 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e40a658e-5095-49ef-906c-b2d9ebca28bb)
-    (property "Reference" "J106" (id 0) (at 256.54 147.32 0)
+    (property "Reference" "J105" (id 0) (at 256.54 147.32 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB C" (id 1) (at 256.54 149.86 0)
@@ -4901,7 +4769,7 @@
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 264.16 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Farnell" "2990003" (id 4) (at 267.97 127 0)
+    (property "Farnell" "2990510" (id 4) (at 267.97 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid c376a890-e6f4-48d0-87db-0352d61b1d96))
@@ -4926,7 +4794,7 @@
   (symbol (lib_id "Strix:Conn_02x05") (at 78.74 142.24 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e584c80e-3de9-4f7a-9e9d-844bd2086241)
-    (property "Reference" "J104" (id 0) (at 80.01 130.81 0))
+    (property "Reference" "J106" (id 0) (at 80.01 130.81 0))
     (property "Value" "SWD" (id 1) (at 80.01 133.35 0))
     (property "Footprint" "Strix:Header_SWD" (id 2) (at 78.74 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -4949,7 +4817,7 @@
   (symbol (lib_id "Strix:D_ESD") (at 243.84 148.59 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e853c59c-dc68-4907-a209-e8ad92bc83f2)
-    (property "Reference" "D111" (id 0) (at 243.84 153.67 90)
+    (property "Reference" "D106" (id 0) (at 243.84 153.67 90)
       (effects (font (size 1.27 1.27)) (justify bottom))
     )
     (property "Value" "D_ESD" (id 1) (at 241.3 149.86 0)
@@ -5068,14 +4936,14 @@
     )
   )
 
-  (sheet (at 48.26 17.78) (size 21.59 30.48) (fields_autoplaced)
+  (sheet (at 48.26 17.78) (size 17.145 13.97) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 0560d9e6-7a86-479d-84fc-0ec915d62cea)
     (property "Sheet name" "PSU" (id 0) (at 48.26 17.0684 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "psu.kicad_sch" (id 1) (at 48.26 48.8446 0)
+    (property "Sheet file" "psu.kicad_sch" (id 1) (at 48.26 32.3346 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (pin "BATT_MON" input (at 48.26 22.86 180)
@@ -5090,18 +4958,6 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 4a041e8f-7af7-45d1-b991-d4094d443e34)
     )
-    (pin "CHG+" input (at 48.26 36.83 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid ccdf6344-14ca-4eda-9382-94c1fa956a70)
-    )
-    (pin "CHG-" input (at 48.26 39.37 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d509b985-b9aa-4acb-b21d-870a86027562)
-    )
-    (pin "CHG_SDN" input (at 69.85 38.1 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid aaee9a17-41aa-4b5a-a6c3-199e1d00f79a)
-    )
   )
 
   (sheet_instances
@@ -5112,247 +4968,241 @@
   )
 
   (symbol_instances
-    (path "/e387e93e-5563-43d9-8d42-192e4d918954"
+    (path "/00000000-0000-0000-0000-000060d03c1d"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
-    (path "/d8160bda-07f6-4872-8981-807a23f49eeb"
-      (reference "#PWR0102") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000061425cdf"
-      (reference "#PWR0103") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000061425cd9"
-      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/5e239642-16e9-446d-b674-ec9ea29879a6"
-      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ad546fa7-8119-4b2a-8bf5-433ccd9163b9"
-      (reference "#PWR0106") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/0f3ffdc9-7aa3-4cee-8b6c-efc7e0ae099d"
-      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/af48eff0-bc84-4fc8-9853-b00363b29775"
-      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/b33d75d5-1213-4385-b5fd-abbfd271b911"
-      (reference "#PWR0109") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/452481c5-f875-416a-9a80-ba8a84c0bb9e"
-      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006142011e"
-      (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/cf346a3e-b09a-457d-9012-775d9a126549"
-      (reference "#PWR0112") (unit 1) (value "3v3") (footprint "")
+    (path "/00000000-0000-0000-0000-000060d652ae"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060e7c43c"
-      (reference "#PWR0113") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0103") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006136fa42"
-      (reference "#PWR0114") (unit 1) (value "GND") (footprint "")
+    (path "/d8160bda-07f6-4872-8981-807a23f49eeb"
+      (reference "#PWR0104") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006142011e"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/af48eff0-bc84-4fc8-9853-b00363b29775"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
     (path "/66c67849-2036-48e3-ab23-98c35d94cbef"
-      (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060d03c1d"
-      (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
+    (path "/ad546fa7-8119-4b2a-8bf5-433ccd9163b9"
+      (reference "#PWR0108") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060d652ae"
-      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
+    (path "/0f3ffdc9-7aa3-4cee-8b6c-efc7e0ae099d"
+      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/e387e93e-5563-43d9-8d42-192e4d918954"
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5e239642-16e9-446d-b674-ec9ea29879a6"
+      (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
     )
     (path "/235628b4-c58a-4855-b7ad-b98fe8ca084e"
+      (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061425cdf"
+      (reference "#PWR0113") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/b33d75d5-1213-4385-b5fd-abbfd271b911"
+      (reference "#PWR0114") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/cf346a3e-b09a-457d-9012-775d9a126549"
+      (reference "#PWR0115") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006136fa42"
+      (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061425cd9"
+      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/452481c5-f875-416a-9a80-ba8a84c0bb9e"
       (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/801ecd31-9938-406a-bbf3-ac0a9b9c1e14"
-      (reference "#PWR0201") (unit 1) (value "3v3") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/ebffb0a9-ee7d-4232-8406-6893c4247825"
+      (reference "#PWR0119") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/62af5bbd-3b56-439c-9fdd-db15772af9b8"
-      (reference "#PWR0202") (unit 1) (value "1v8") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/02524cfb-23bb-4660-9534-2fe1f2205c4c"
+      (reference "#PWR0120") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000619fd90a/7cc441a4-bde4-41a3-b304-89a2dc863ce6"
+      (reference "#PWR0121") (unit 1) (value "1v8") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/00000000-0000-0000-0000-00006165ad4b"
-      (reference "#PWR0203") (unit 1) (value "1v8") (footprint "")
+      (reference "#PWR0201") (unit 1) (value "1v8") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/00000000-0000-0000-0000-00006165afc3"
-      (reference "#PWR0204") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0202") (unit 1) (value "3v3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/00000000-0000-0000-0000-00006135af2b"
-      (reference "#PWR0206") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0203") (unit 1) (value "3v3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/00000000-0000-0000-0000-00006135ab9d"
-      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0204") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/00000000-0000-0000-0000-00006165d13c"
-      (reference "#PWR0208") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0205") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/fba37dc2-213f-43e4-bda2-2be34fab4948"
-      (reference "#PWR0209") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/63dfecbd-c46a-4ded-8c22-c05432c9d37c"
+      (reference "#PWR0206") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/53441365-c8c9-4091-a77b-30812428f1b0"
-      (reference "#PWR0210") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000619fd90a/85e494da-4876-4a11-bb15-a9d6ed9ac882"
-      (reference "#PWR0211") (unit 1) (value "1v8") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/346f6dd8-49eb-41ec-a237-0858698744e1"
+      (reference "#PWR0207") (unit 1) (value "1v8") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/5e3203a0-41be-4593-b8af-98dddf5bcb62"
-      (reference "#PWR0212") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0208") (unit 1) (value "3v3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/a1d21ffd-4d66-480f-81f1-2926b421b7d2"
-      (reference "#PWR0213") (unit 1) (value "1v8") (footprint "")
+      (reference "#PWR0209") (unit 1) (value "1v8") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/c2e71e74-24a7-43b2-9848-85e1a4794280"
-      (reference "#PWR0214") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0210") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/3851c4d7-ccfb-4236-bc6a-86173c89c866"
-      (reference "#PWR0215") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/ba62be7d-fd36-43bc-9660-4871f41b37a0"
+      (reference "#PWR0211") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/3520bf2b-35f1-4dfc-843e-361a823b71c7"
-      (reference "#PWR0216") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/eeba7b1c-3cfb-45c2-b08b-0b154d13a3e7"
+      (reference "#PWR0212") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/6d8a1fba-e41e-43b8-9a6d-661b82b82780"
-      (reference "#PWR0217") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0213") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/90d1a92a-771c-4d5b-949e-56620dbf9030"
-      (reference "#PWR0218") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0214") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/e55ca6a0-b861-44b9-b029-e5a4f969ca8c"
-      (reference "#PWR0219") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0215") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/ac289dd1-803e-4e77-a123-c936dd5cb6f5"
-      (reference "#PWR0301") (unit 1) (value "1v8") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/e85e60d2-85ba-4eb2-aa06-5db0454ace7d"
+      (reference "#PWR0216") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/0c653c18-7cb3-423e-b1e8-4d2373492c57"
-      (reference "#PWR0302") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/8bfd6b8b-de22-4c4c-b744-82d0d298ec18"
+      (reference "#PWR0217") (unit 1) (value "1v8") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/bb2c90c3-fbfe-440e-83e0-a6842015f9fc"
-      (reference "#PWR0303") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000619fd90a/539a56d7-7135-4a82-98cf-8920cd6aadb1"
+      (reference "#PWR0218") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a05fc"
-      (reference "#PWR0304") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a05e3"
-      (reference "#PWR0305") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0610"
-      (reference "#PWR0306") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0616"
-      (reference "#PWR0307") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba4a"
-      (reference "#PWR0308") (unit 1) (value "3v3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba25"
-      (reference "#PWR0309") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0301") (unit 1) (value "3v3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd924"
+      (reference "#PWR0302") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a05e3"
+      (reference "#PWR0303") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/ac289dd1-803e-4e77-a123-c936dd5cb6f5"
+      (reference "#PWR0304") (unit 1) (value "1v8") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/0c653c18-7cb3-423e-b1e8-4d2373492c57"
+      (reference "#PWR0305") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/bb2c90c3-fbfe-440e-83e0-a6842015f9fc"
+      (reference "#PWR0306") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd98c"
+      (reference "#PWR0307") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd918"
+      (reference "#PWR0308") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd9a9"
+      (reference "#PWR0309") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0610"
       (reference "#PWR0310") (unit 1) (value "3v3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd94a"
       (reference "#PWR0311") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd98c"
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0616"
       (reference "#PWR0312") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006139e5ea"
-      (reference "#PWR0313") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba4a"
+      (reference "#PWR0313") (unit 1) (value "3v3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd918"
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba25"
       (reference "#PWR0314") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd9a9"
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006139e5ea"
       (reference "#PWR0315") (unit 1) (value "GND") (footprint "")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8fe90403-37aa-4d2f-883d-77665e360432"
       (reference "#PWR0401") (unit 1) (value "VBATT") (footprint "")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/189825be-bf92-496f-90cf-19f810cd762c"
-      (reference "#PWR0402") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/5c312bbc-a1c6-4b8d-b9a9-82061fcbccf0"
-      (reference "#PWR0403") (unit 1) (value "PGND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/09a7f203-3257-415c-8f84-91a6ae334a8a"
-      (reference "#PWR0404") (unit 1) (value "PGND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/72e30087-5d67-44be-82d8-b252998130b8"
-      (reference "#PWR0405") (unit 1) (value "PGND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/23e84008-f98c-43b4-9c25-41e6d87d541f"
-      (reference "#PWR0406") (unit 1) (value "VBATT") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/b6d52516-c807-4538-a6fe-69fbdaee9483"
-      (reference "#PWR0407") (unit 1) (value "GND") (footprint "")
-    )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/20cd8d2b-5a38-4e3c-90f2-d79a7eeb64fd"
-      (reference "#PWR0408") (unit 1) (value "VBATT") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/82dcff76-3543-4a02-9dce-614e81d18bac"
-      (reference "#PWR0409") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/19370515-7a17-4304-acb5-1f71bfb85d7e"
-      (reference "#PWR0410") (unit 1) (value "VBATT") (footprint "")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/79425220-a032-494e-8721-f1e712b479c1"
-      (reference "#PWR0411") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0402") (unit 1) (value "VBATT") (footprint "")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/a0dc3593-e1ca-43e6-852e-3e2e8f80ff3c"
-      (reference "#PWR0412") (unit 1) (value "3v3") (footprint "")
+      (reference "#PWR0403") (unit 1) (value "3v3") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/82dcff76-3543-4a02-9dce-614e81d18bac"
+      (reference "#PWR0404") (unit 1) (value "GND") (footprint "")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/01fed917-2bf6-4f12-84a9-735bf9b1a135"
-      (reference "#PWR0413") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0405") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/19370515-7a17-4304-acb5-1f71bfb85d7e"
+      (reference "#PWR0406") (unit 1) (value "VBATT") (footprint "")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/9a5797a4-46c1-4a5e-9369-ef75c567854d"
-      (reference "#PWR0414") (unit 1) (value "1v8") (footprint "")
+      (reference "#PWR0407") (unit 1) (value "1v8") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/189825be-bf92-496f-90cf-19f810cd762c"
+      (reference "#PWR0408") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/79425220-a032-494e-8721-f1e712b479c1"
+      (reference "#PWR0409") (unit 1) (value "GND") (footprint "")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8ef5fc67-645f-4e40-8bf4-a91927ee2e6e"
-      (reference "#PWR0415") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0410") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060e7c4a9"
       (reference "C101") (unit 1) (value "1µ") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-000060e7c494"
+    (path "/00000000-0000-0000-0000-000060e7c4a2"
       (reference "C102") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/cbfce235-eafe-4b95-9991-d5441bd02908"
-      (reference "C103") (unit 1) (value "10p") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-000060e7c49b"
+      (reference "C103") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/44d1a38b-b9fc-430b-8721-5eb9a958aec2"
-      (reference "C104") (unit 1) (value "10p") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-000060e7c4b0"
+      (reference "C104") (unit 1) (value "4µ7") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-000060e7c4a2"
+    (path "/00000000-0000-0000-0000-000060e7c494"
       (reference "C105") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-000060e7c48d"
       (reference "C106") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-000060e7c49b"
+    (path "/00000000-0000-0000-0000-000060e7c486"
       (reference "C107") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-000060e7c486"
-      (reference "C108") (unit 1) (value "100n") (footprint "Strix:C_0402")
-    )
     (path "/00000000-0000-0000-0000-000060e7c46a"
-      (reference "C109") (unit 1) (value "2µ2") (footprint "Strix:C_0402")
+      (reference "C108") (unit 1) (value "2µ2") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-000060e7c471"
-      (reference "C110") (unit 1) (value "2µ2") (footprint "Strix:C_0402")
+      (reference "C109") (unit 1) (value "2µ2") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000613d0152"
-      (reference "C111") (unit 1) (value "100n") (footprint "Strix:C_0402")
+      (reference "C110") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-000060e7c4b0"
-      (reference "C112") (unit 1) (value "4µ7") (footprint "Strix:C_0402")
+    (path "/cbfce235-eafe-4b95-9991-d5441bd02908"
+      (reference "C111") (unit 1) (value "10p") (footprint "Strix:C_0402")
+    )
+    (path "/44d1a38b-b9fc-430b-8721-5eb9a958aec2"
+      (reference "C112") (unit 1) (value "10p") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/0ca6d51e-52e6-4bd0-8134-5e04c545ed52"
       (reference "C201") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/52cc7b16-c1b3-4270-ba0c-51c0f7dddc4a"
+    (path "/00000000-0000-0000-0000-0000619fd90a/24c86c75-7878-434a-89da-d7691b3e8eb4"
       (reference "C202") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/67832117-1796-41eb-970e-9129796bd463"
+    (path "/00000000-0000-0000-0000-0000619fd90a/acaaf045-c9af-4b6c-97d5-07739498f225"
       (reference "C203") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/7ae67a4e-a48f-4447-94ba-e7a6f0ce7cf5"
@@ -5367,131 +5217,113 @@
     (path "/00000000-0000-0000-0000-0000619fd90a/4d42e9c1-68d4-4062-b21a-69010d8e0318"
       (reference "C207") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
+    (path "/00000000-0000-0000-0000-0000619fd90a/67832117-1796-41eb-970e-9129796bd463"
+      (reference "C208") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    )
     (path "/00000000-0000-0000-0000-0000611291b2/2d47921a-41f2-46d3-8773-a6941fabcdfd"
       (reference "C301") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/e1bcf264-be8e-4194-8f1e-99ba0210b541"
       (reference "C302") (unit 1) (value "2n") (footprint "Strix:C_0402")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba60"
-      (reference "C303") (unit 1) (value "100n") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0644"
-      (reference "C304") (unit 1) (value "1u") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a063e"
-      (reference "C305") (unit 1) (value "2u2") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0638"
-      (reference "C306") (unit 1) (value "100n") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0632"
-      (reference "C307") (unit 1) (value "220p") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a062c"
-      (reference "C308") (unit 1) (value "100p") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd951"
-      (reference "C309") (unit 1) (value "3p") (footprint "Strix:C_0402")
-    )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd97f"
-      (reference "C310") (unit 1) (value "5p1") (footprint "Strix:C_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd93d"
-      (reference "C311") (unit 1) (value "1p2") (footprint "Strix:C_0402")
+      (reference "C303") (unit 1) (value "5p1") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd986"
-      (reference "C312") (unit 1) (value "6n8") (footprint "Strix:C_0402")
+      (reference "C304") (unit 1) (value "6n8") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd972"
-      (reference "C313") (unit 1) (value "3p3") (footprint "Strix:C_0402")
+      (reference "C305") (unit 1) (value "3p3") (footprint "Strix:C_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd978"
-      (reference "C314") (unit 1) (value "3p3") (footprint "Strix:C_0402")
+      (reference "C306") (unit 1) (value "3p3") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/7e2df0b7-da78-4cd6-bf07-18292a7cf078"
-      (reference "C401") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd93d"
+      (reference "C307") (unit 1) (value "1p2") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/2eaad9dd-ed86-4d17-8267-8c7e71d1f6d3"
-      (reference "C402") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd951"
+      (reference "C308") (unit 1) (value "3p") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/7ffbcf34-4e44-4705-8aaa-88148c848f98"
-      (reference "C403") (unit 1) (value "330n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0644"
+      (reference "C309") (unit 1) (value "1u") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/85784899-6875-4559-9771-267a73ca4ab3"
-      (reference "C404") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a063e"
+      (reference "C310") (unit 1) (value "2u2") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/7a9ff2ff-18f2-4d56-b826-1f29287d27e3"
-      (reference "C405") (unit 1) (value "470n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0638"
+      (reference "C311") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/ba10e1d7-65d2-476e-aba5-dfb878f7da87"
-      (reference "C406") (unit 1) (value "10u") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a0632"
+      (reference "C312") (unit 1) (value "220p") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/1651b684-e3e9-4a15-acf6-2aa546db287e"
-      (reference "C407") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000611a062c"
+      (reference "C313") (unit 1) (value "100p") (footprint "Strix:C_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/08bb1afe-a1b6-4526-a9d0-eb5567e3b97c"
-      (reference "C408") (unit 1) (value "22u") (footprint "Strix:C_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006124ba60"
+      (reference "C314") (unit 1) (value "100n") (footprint "Strix:C_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/a996384d-e545-45bd-921b-60bec151aabf"
-      (reference "C409") (unit 1) (value "10u") (footprint "Strix:C_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/e5106dcc-724a-4099-88c7-338e8f1ecf1a"
-      (reference "C410") (unit 1) (value "10u") (footprint "Strix:C_0402")
+      (reference "C401") (unit 1) (value "10u") (footprint "Strix:C_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/2ceefd21-9633-4cdd-9f06-ecd69f185814"
-      (reference "C411") (unit 1) (value "10u") (footprint "Strix:C_0402")
+      (reference "C402") (unit 1) (value "10u") (footprint "Strix:C_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/7e2df0b7-da78-4cd6-bf07-18292a7cf078"
+      (reference "C403") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/1651b684-e3e9-4a15-acf6-2aa546db287e"
+      (reference "C404") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/2eaad9dd-ed86-4d17-8267-8c7e71d1f6d3"
+      (reference "C405") (unit 1) (value "100n") (footprint "Strix:C_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/7ffbcf34-4e44-4705-8aaa-88148c848f98"
+      (reference "C406") (unit 1) (value "330n") (footprint "Strix:C_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/e5106dcc-724a-4099-88c7-338e8f1ecf1a"
+      (reference "C407") (unit 1) (value "10u") (footprint "Strix:C_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/70d4d2ee-ec37-4182-9883-824f76bc0fd6"
-      (reference "C412") (unit 1) (value "10u") (footprint "Strix:C_0402")
-    )
-    (path "/9f5b92df-a9fc-40a8-958b-14377f29c85a"
-      (reference "D101") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/e26e50c4-cf70-4f87-928a-0e6d36a91c09"
-      (reference "D102") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+      (reference "C408") (unit 1) (value "10u") (footprint "Strix:C_0402")
     )
     (path "/c3b69905-b979-4ca9-8e95-d758dcfb4921"
-      (reference "D103") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+      (reference "D101") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
-    (path "/c9ac9432-79fb-4243-93eb-f96d2d6fda05"
-      (reference "D104") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/62f0bfbc-cb6f-4bd8-b7f7-58d0b035da2d"
-      (reference "D105") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/5b3b6d37-3aec-4f75-ab41-29e50f33663c"
-      (reference "D106") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/8bd7e5db-f6a0-4982-8e76-3b852da965d0"
-      (reference "D107") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/1d833786-2802-42f0-ba37-6c65c859ff44"
-      (reference "D108") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/a39c6df7-9ef6-49f1-87cc-b278a6adebfe"
-      (reference "D109") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/d0ad3752-1409-4e24-8849-3514abf1a71c"
-      (reference "D110") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/e853c59c-dc68-4907-a209-e8ad92bc83f2"
-      (reference "D111") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
-    )
-    (path "/062bbb8b-bb25-4f1a-b150-3ae40f70064e"
-      (reference "D112") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    (path "/9f5b92df-a9fc-40a8-958b-14377f29c85a"
+      (reference "D102") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
     (path "/00000000-0000-0000-0000-000060d1b9af"
-      (reference "D113") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+      (reference "D103") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
     (path "/517f8b45-a412-4a84-97f0-bbde03a49b71"
-      (reference "D114") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+      (reference "D104") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/6d89a26b-fadc-4d42-8ad7-831c9a1bef6d"
-      (reference "D401") (unit 1) (value "B330") (footprint "Strix:B330")
+    (path "/d0ad3752-1409-4e24-8849-3514abf1a71c"
+      (reference "D105") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/e22e9ca0-b889-4189-99da-ee75afdcf3c6"
-      (reference "D402") (unit 1) (value "B330") (footprint "Strix:B330")
+    (path "/e853c59c-dc68-4907-a209-e8ad92bc83f2"
+      (reference "D106") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/062bbb8b-bb25-4f1a-b150-3ae40f70064e"
+      (reference "D107") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/c9ac9432-79fb-4243-93eb-f96d2d6fda05"
+      (reference "D108") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/62f0bfbc-cb6f-4bd8-b7f7-58d0b035da2d"
+      (reference "D109") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/5b3b6d37-3aec-4f75-ab41-29e50f33663c"
+      (reference "D110") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/8bd7e5db-f6a0-4982-8e76-3b852da965d0"
+      (reference "D111") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/1d833786-2802-42f0-ba37-6c65c859ff44"
+      (reference "D112") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
+    )
+    (path "/a39c6df7-9ef6-49f1-87cc-b278a6adebfe"
+      (reference "D113") (unit 1) (value "D_ESD") (footprint "Strix:D_0402")
     )
     (path "/00000000-0000-0000-0000-000061342567"
       (reference "H101") (unit 1) (value "MountingHole_Pad") (footprint "Strix:MountingHole_Pad")
@@ -5508,26 +5340,23 @@
     (path "/00000000-0000-0000-0000-000061395090"
       (reference "J101") (unit 1) (value "BATT") (footprint "Strix:Molex_Nano-Fit_105313-1103")
     )
-    (path "/d65ffd3d-864a-44bc-a867-54eb772052d5"
-      (reference "J102") (unit 1) (value "CHG") (footprint "Strix:Molex_Nano-Fit_105313-1102")
-    )
-    (path "/733357d6-262c-40f3-b8ba-31a42dd1fe2a"
-      (reference "J103") (unit 1) (value "Expansion Slot") (footprint "Strix:Header_RaspberryPi")
-    )
-    (path "/e584c80e-3de9-4f7a-9e9d-844bd2086241"
-      (reference "J104") (unit 1) (value "SWD") (footprint "Strix:Header_SWD")
-    )
-    (path "/e263bf58-f20f-4eb7-9ec5-a88cf27bf968"
-      (reference "J105") (unit 1) (value "BLACKBOX") (footprint "Strix:Molex_Nano-Fit_105314-1108")
-    )
-    (path "/e40a658e-5095-49ef-906c-b2d9ebca28bb"
-      (reference "J106") (unit 1) (value "USB C") (footprint "Strix:USB_C")
-    )
     (path "/658a1945-65ec-476a-97c4-8389abeee50e"
-      (reference "J107") (unit 1) (value "GPS") (footprint "Strix:SMA-Edge")
+      (reference "J102") (unit 1) (value "GPS") (footprint "Strix:SMA-Edge")
     )
     (path "/b21f5d68-c63b-407e-9217-7610aaac9c33"
-      (reference "J108") (unit 1) (value "TELEM") (footprint "Strix:SMA-Edge")
+      (reference "J103") (unit 1) (value "TELEM") (footprint "Strix:SMA-Edge")
+    )
+    (path "/733357d6-262c-40f3-b8ba-31a42dd1fe2a"
+      (reference "J104") (unit 1) (value "Expansion Slot") (footprint "Strix:Header_RaspberryPi")
+    )
+    (path "/e40a658e-5095-49ef-906c-b2d9ebca28bb"
+      (reference "J105") (unit 1) (value "USB C") (footprint "Strix:USB_C")
+    )
+    (path "/e584c80e-3de9-4f7a-9e9d-844bd2086241"
+      (reference "J106") (unit 1) (value "SWD") (footprint "Strix:Header_SWD")
+    )
+    (path "/e263bf58-f20f-4eb7-9ec5-a88cf27bf968"
+      (reference "J107") (unit 1) (value "BLACKBOX") (footprint "Strix:Molex_Nano-Fit_105314-1108")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000613a4699"
       (reference "J301") (unit 1) (value "BMI-S-201") (footprint "Strix:BMI-S-201")
@@ -5535,92 +5364,80 @@
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd92c"
       (reference "L301") (unit 1) (value "120n") (footprint "Strix:L_0402")
     )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd95b"
-      (reference "L302") (unit 1) (value "18n") (footprint "Strix:L_0402")
-    )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd966"
-      (reference "L303") (unit 1) (value "3n3") (footprint "Strix:L_0402")
-    )
-    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd944"
-      (reference "L304") (unit 1) (value "24n") (footprint "Strix:L_0402")
+      (reference "L302") (unit 1) (value "3n3") (footprint "Strix:L_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd993"
-      (reference "L305") (unit 1) (value "12n") (footprint "Strix:L_0402")
+      (reference "L303") (unit 1) (value "12n") (footprint "Strix:L_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd96c"
-      (reference "L306") (unit 1) (value "24n") (footprint "Strix:L_0402")
+      (reference "L304") (unit 1) (value "24n") (footprint "Strix:L_0402")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd99b"
-      (reference "L307") (unit 1) (value "12n") (footprint "Strix:L_0402")
+      (reference "L305") (unit 1) (value "12n") (footprint "Strix:L_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/49ce3b38-5471-489d-83c4-0b16140dc07d"
-      (reference "L401") (unit 1) (value "6u8") (footprint "Strix:L_Wuerth_HCI-7050")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd95b"
+      (reference "L306") (unit 1) (value "18n") (footprint "Strix:L_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/2bd88b42-a583-4824-8baf-4ecac716152a"
-      (reference "Q401") (unit 1) (value "Si9933CDY") (footprint "Strix:Si9933CDY")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/eb3b75c6-f775-48c1-aa10-2016bd53ab26"
-      (reference "Q401") (unit 2) (value "Si9933CDY") (footprint "Strix:Si9933CDY")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/b4cc3f2a-f2be-4f94-9ec8-4eec9cf55a9d"
-      (reference "Q402") (unit 1) (value "BSS138") (footprint "Strix:BSS138")
-    )
-    (path "/00000000-0000-0000-0000-0000618d7b1a"
-      (reference "R101") (unit 1) (value "120") (footprint "Strix:R_0402")
+    (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000612bd944"
+      (reference "L307") (unit 1) (value "24n") (footprint "Strix:L_0402")
     )
     (path "/482ee53c-25d7-4d65-bfd1-8b5c28ae803b"
-      (reference "R102") (unit 1) (value "100") (footprint "Strix:R_0402")
+      (reference "R101") (unit 1) (value "100") (footprint "Strix:R_0402")
+    )
+    (path "/53f1a01a-ab00-470b-871b-16512f4395a9"
+      (reference "R102") (unit 1) (value "10k") (footprint "Strix:R_0402")
     )
     (path "/c3cf6db5-d3db-4caf-8449-25ddacaa7217"
       (reference "R103") (unit 1) (value "10k") (footprint "Strix:R_0402")
     )
-    (path "/53f1a01a-ab00-470b-871b-16512f4395a9"
-      (reference "R104") (unit 1) (value "10k") (footprint "Strix:R_0402")
+    (path "/00000000-0000-0000-0000-0000618d7b1a"
+      (reference "R104") (unit 1) (value "120") (footprint "Strix:R_0402")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/3cad4c2c-33dc-4254-8b48-6c0b86892a68"
-      (reference "R205") (unit 1) (value "10k") (footprint "Strix:R_0402")
+    (path "/00000000-0000-0000-0000-0000619fd90a/ba9a4ebf-5eec-4d42-b8b4-9df72964a241"
+      (reference "R201") (unit 1) (value "200k") (footprint "Strix:R_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/d60723be-0ece-433c-a3cc-8d026e9d4965"
-      (reference "R401") (unit 1) (value "100k") (footprint "Strix:R_0402")
+    (path "/00000000-0000-0000-0000-0000619fd90a/d1c0dfb7-9f4a-444b-9148-78b7f675ee65"
+      (reference "R202") (unit 1) (value "4k7") (footprint "Strix:R_0402")
+    )
+    (path "/00000000-0000-0000-0000-0000619fd90a/b513a0b7-a412-4620-8a90-165aff53a15c"
+      (reference "R203") (unit 1) (value "4k7") (footprint "Strix:R_0402")
+    )
+    (path "/00000000-0000-0000-0000-0000619fd90a/0c898eec-35c3-4818-a6ac-5aace4b3b6a6"
+      (reference "R204") (unit 1) (value "4k7") (footprint "Strix:R_0402")
+    )
+    (path "/00000000-0000-0000-0000-0000619fd90a/545bba93-46fc-40be-9c89-fec1ecb82ea2"
+      (reference "R205") (unit 1) (value "4k7") (footprint "Strix:R_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8d410b65-ef1c-4d77-9ee3-71c27d52b1c7"
+      (reference "R401") (unit 1) (value "100") (footprint "Strix:R_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/c1477338-ef87-4c7d-b5df-dc2676587dcd"
       (reference "R402") (unit 1) (value "160") (footprint "Strix:R_0402")
     )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/1959c563-21ad-451b-ba57-fed55e6b83c6"
-      (reference "R403") (unit 1) (value "261") (footprint "Strix:R_0402")
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8580b24c-9645-4483-932a-b1ae05eda258"
+      (reference "R403") (unit 1) (value "100") (footprint "Strix:R_0402")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/a07361ae-4e0e-4833-b918-e1627e691016"
+      (reference "R404") (unit 1) (value "160") (footprint "Strix:R_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/84f8f0d2-3686-496f-9d10-a225347d39e5"
-      (reference "R404") (unit 1) (value "100") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/eec06f2b-583d-4883-ad1c-81e2c6a03300"
-      (reference "R405") (unit 1) (value "10k") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/39544767-e3f4-44a1-a969-e4d765491540"
-      (reference "R406") (unit 1) (value "100") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/f9d9c79f-b842-4111-beeb-18fb438ffe8c"
-      (reference "R407") (unit 1) (value "2k2") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8d410b65-ef1c-4d77-9ee3-71c27d52b1c7"
-      (reference "R408") (unit 1) (value "100") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/8f0eaf31-d77f-4f19-a1a3-c143c3340150"
-      (reference "R409") (unit 1) (value "50m") (footprint "Strix:R_0402")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/479604dc-d6aa-4b3d-beeb-0bdfc93e1f9a"
-      (reference "R410") (unit 1) (value "200k") (footprint "Strix:R_0402")
+      (reference "R405") (unit 1) (value "100") (footprint "Strix:R_0402")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/da4e2d51-acf9-414d-9a11-fec36ae754ab"
-      (reference "R411") (unit 1) (value "100k") (footprint "Strix:R_0402")
+      (reference "R406") (unit 1) (value "100k") (footprint "Strix:R_0402")
     )
-    (path "/00000000-0000-0000-0000-0000618d7b14"
-      (reference "U101") (unit 1) (value "MAX14787E") (footprint "Strix:MAX14787E")
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/479604dc-d6aa-4b3d-beeb-0bdfc93e1f9a"
+      (reference "R407") (unit 1) (value "200k") (footprint "Strix:R_0402")
     )
     (path "/00000000-0000-0000-0000-00006138d4b0"
-      (reference "U102") (unit 1) (value "STM32F405RGT6") (footprint "Strix:STM32F405RGT6")
+      (reference "U101") (unit 1) (value "STM32F405RGT6") (footprint "Strix:STM32F405RGT6")
     )
-    (path "/00000000-0000-0000-0000-0000619fd90a/c9a4d314-2811-42f1-87bf-f40e9440588b"
-      (reference "U201") (unit 1) (value "TXS0108EPW") (footprint "Strix:TXS0108EPW")
+    (path "/00000000-0000-0000-0000-0000618d7b14"
+      (reference "U102") (unit 1) (value "MAX14787E") (footprint "Strix:MAX14787E")
+    )
+    (path "/00000000-0000-0000-0000-0000619fd90a/7b8951ea-188b-429f-9923-28df0226bedb"
+      (reference "U201") (unit 1) (value "NXB0108PW-Q100J") (footprint "Strix:NXB0108PW-Q100J")
     )
     (path "/00000000-0000-0000-0000-0000619fd90a/833dc3ca-5f5d-42c4-8e71-f9478a5a71c3"
       (reference "U202") (unit 1) (value "ICM-20789") (footprint "Strix:ICM-20789")
@@ -5628,23 +5445,23 @@
     (path "/00000000-0000-0000-0000-0000619fd90a/dd2531ae-962f-4d3a-8ed1-f1efc16356ac"
       (reference "U203") (unit 1) (value "MS5611-01BA") (footprint "Strix:MS5611-01BA")
     )
+    (path "/00000000-0000-0000-0000-0000619fd90a/3321f103-0e43-4dbc-a778-41eca645014a"
+      (reference "U204") (unit 1) (value "PCA9306") (footprint "Strix:PCA9306")
+    )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-00006136820b"
       (reference "U301") (unit 1) (value "Si4463") (footprint "Strix:Si4463")
     )
     (path "/00000000-0000-0000-0000-0000611291b2/00000000-0000-0000-0000-0000613a31e6"
-      (reference "U302") (unit 1) (value "MAX-M8Q") (footprint "Strix:MAX-M8Q")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/efa65d84-4d33-4d24-8ecd-912f1b43323c"
-      (reference "U401") (unit 1) (value "BQ29200") (footprint "Strix:BQ29200")
-    )
-    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/1eb42abd-1deb-463e-b751-41637bf1529b"
-      (reference "U402") (unit 1) (value "LTC4002-ES8") (footprint "Strix:LTC4002-ES8")
+      (reference "U302") (unit 1) (value "MAX-M8") (footprint "Strix:MAX-M8")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/c8363d47-9959-4a99-ba05-3ea13938c61f"
-      (reference "U403") (unit 1) (value "MAX604") (footprint "Strix:MAX604")
+      (reference "U401") (unit 1) (value "MAX604") (footprint "Strix:MAX604")
+    )
+    (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/efa65d84-4d33-4d24-8ecd-912f1b43323c"
+      (reference "U402") (unit 1) (value "BQ29200") (footprint "Strix:BQ29200")
     )
     (path "/0560d9e6-7a86-479d-84fc-0ec915d62cea/fcf5a5fb-c085-4220-8d90-a23267dcddc7"
-      (reference "U404") (unit 1) (value "MAX604") (footprint "Strix:MAX604")
+      (reference "U403") (unit 1) (value "MAX604") (footprint "Strix:MAX604")
     )
     (path "/96d64ec3-74dd-45f3-9f77-b1b10a62a585"
       (reference "Y101") (unit 1) (value "26M") (footprint "Strix:Xtal_SMD_2016")
