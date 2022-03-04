@@ -1,0 +1,23 @@
+name: flight-computer
+lsefreq: 0
+hsefreq: 26000000
+voltage: 3.3
+mcutype: STM32F405xx
+default: input, pushpull, starthigh, pullup, highspeed
+pins:
+  SWDIO:    pa13, af0
+  SWCLK:    pa14, pulldown, af0
+
+  BB_RX:    pb11, af7
+  BB_TX:    pb10, af7
+
+  SD1_nCS:  pb12, output
+  SD1_SCLK: pb13, af5
+  SD1_MISO: pb14, af5
+  SD1_MODI: pb15, af5
+
+  SD2_nCS:   pc9, output
+  SD2_SCLK: pc10, af5
+  SD2_MISO: pc11, af5
+  SD2_MOSI: pc12, af5
+
