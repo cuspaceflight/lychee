@@ -1,3 +1,10 @@
 [submodule "schematics/lib"]
 	path = schematics/lib
 	url = https://github.com/cuspaceflight/strix-symbols
+[submodule "firmware/shared/ChibiOS"]
+	path = firmware/shared/ChibiOS
+	url = https://github.com/ChibiOS/ChibiOS
+	branch = stable_21.11.x
+[submodule "firmware/shared/gen-board"]
+	path = firmware/shared/gen-board
+	url = https://github.com/HarkonenBade/gen-board.h
