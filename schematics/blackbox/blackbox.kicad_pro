@@ -350,9 +350,7 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": [
-      "Strix"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "blackbox.kicad_pro",
