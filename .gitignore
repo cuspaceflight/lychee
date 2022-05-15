@@ -29,3 +29,10 @@ fp-info-cache
 # Exported plot files
 schematics/*/plot/
 
+#vscode
+.vscode
+
+#chibistudio 
+.dep
+build
+
