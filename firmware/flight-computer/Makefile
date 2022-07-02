@@ -121,6 +121,22 @@ BOARDINC=./board
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F405xG.ld
 
+#############################################
+# IMPORT LIBRARIES
+
+# MUST DEFINE THIS BEFORE IMPORT
+BUFFALOPATH = lib/buffalo
+include $(BUFFALOPATH)/buffalo.mk
+
+# MUST DEFINE THIS BEFORE IMPORT
+COYOTEPATH = lib/coyote
+include $(COYOTEPATH)/coyote.mk
+
+DRIVERSPATH = ../shared/drivers/
+include $(DRIVERSPATH)/drivers.mk
+
+#############################################
+
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
 CSRC = $(ALLCSRC) \
@@ -130,7 +146,10 @@ CSRC = $(ALLCSRC) \
        ublox.c \
        m4status.c \
        m4can.c \
-       m4radio_router.c
+       m4radio_router.c \
+       $(BUFFALOSRC) \
+       $(COYOTESRC) \
+       $(DRIVERSRC)
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -143,7 +162,8 @@ ASMSRC = $(ALLASMSRC)
 ASMXSRC = $(ALLXASMSRC)
 
 # Inclusion directories.
-INCDIR = $(CONFDIR) $(ALLINC) $(TESTINC) $(BOARDINC)
+INCDIR = $(CONFDIR) $(ALLINC) $(TESTINC) $(BOARDINC) \
+		 $(BUFFALOINC) $(COYOTEINC) $(DRIVERINC)
 
 # Define C warning options here.
 CWARN = -Wall -Wextra -Wundef -Wstrict-prototypes
