@@ -132,7 +132,7 @@ include $(BUFFALOPATH)/buffalo.mk
 COYOTEPATH = lib/coyote
 include $(COYOTEPATH)/coyote.mk
 
-DRIVERSPATH = ../shared/drivers/
+DRIVERSPATH = ../shared/drivers
 include $(DRIVERSPATH)/drivers.mk
 
 #############################################
@@ -143,13 +143,9 @@ CSRC = $(ALLCSRC) \
        $(TESTSRC) \
        $(BOARDSRC) \
        main.c \
-       ublox.c \
-       m4status.c \
-       m4can.c \
-       m4radio_router.c \
        $(BUFFALOSRC) \
        $(COYOTESRC) \
-       $(DRIVERSRC)
+       $(DRIVERSSRC)
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -187,9 +183,9 @@ UDEFS = -DFIRMWARE_VERSION=\"$(GITVERSION)\"
 UADEFS =
 
 # List all user directories here
-UINCDIR = lib/buffalo/include \
-		  lib/coyote/include \
-		  ../shared/drivers/max-m8c/include
+UINCDIR = $(BUFFALOINC) \
+		  $(COYOTEINC) \
+		  $(DRIVERSINC)
 
 # List the user directory to look for the libraries here
 ULIBDIR = 
