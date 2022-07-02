@@ -8,3 +8,12 @@
 [submodule "firmware/shared/gen-board"]
 	path = firmware/shared/gen-board
 	url = https://github.com/HarkonenBade/gen-board.h
+[submodule "firmware/drivers"]
+	path = firmware/shared/drivers
+	url = https://github.com/cuspaceflight/strix-drivers
+[submodule "firmware/flight-computer/lib/buffalo"]
+	path = firmware/flight-computer/lib/buffalo
+	url = https://github.com/cuspaceflight/buffalo
+[submodule "firmware/flight-computer/lib/coyote"]
+	path = firmware/flight-computer/lib/coyote
+	url = https://github.com/cuspaceflight/coyote

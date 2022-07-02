@@ -83,15 +83,14 @@ endif
 #
 
 # Define project name here
-PROJECT = ch
+PROJECT = flight-computer
 
 # Target settings.
 MCU  = cortex-m4
 
 # Imported source files and paths.
-#CHIBIOS  := ../../..
 # SET CHIBIOS PATH HERE
-CHIBIOS  := C:\ChibiStudio\chibios2111
+CHIBIOS  := ../shared/ChibiOS
 CONFDIR  := ./cfg
 BUILDDIR := ./build
 DEPDIR   := ./.dep
@@ -104,7 +103,6 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
-include $(CHIBIOS)/os/hal/boards/Lychee/board.mk
 include $(CHIBIOS)/os/hal/osal/rt-nil/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -117,6 +115,9 @@ include $(CHIBIOS)/os/common/ports/ARMv7-M/compilers/GCC/mk/port.mk
 #include $(CHIBIOS)/test/oslib/oslib_test.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 
+BOARDSRC=./board/board.c
+BOARDINC=./board
+
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F405xG.ld
 
@@ -124,6 +125,7 @@ LDSCRIPT= $(STARTUPLD)/STM32F405xG.ld
 # setting.
 CSRC = $(ALLCSRC) \
        $(TESTSRC) \
+       $(BOARDSRC) \
        main.c \
        ublox.c \
        m4status.c \
@@ -141,7 +143,7 @@ ASMSRC = $(ALLASMSRC)
 ASMXSRC = $(ALLXASMSRC)
 
 # Inclusion directories.
-INCDIR = $(CONFDIR) $(ALLINC) $(TESTINC)
+INCDIR = $(CONFDIR) $(ALLINC) $(TESTINC) $(BOARDINC)
 
 # Define C warning options here.
 CWARN = -Wall -Wextra -Wundef -Wstrict-prototypes
@@ -165,13 +167,15 @@ UDEFS = -DFIRMWARE_VERSION=\"$(GITVERSION)\"
 UADEFS =
 
 # List all user directories here
-UINCDIR =
+UINCDIR = lib/buffalo/include \
+		  lib/coyote/include \
+		  ../shared/drivers/max-m8c/include
 
 # List the user directory to look for the libraries here
-ULIBDIR =
+ULIBDIR = 
 
 # List all user libraries here
-ULIBS =
+ULIBS = 
 
 #
 # End of user section
