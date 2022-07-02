@@ -47,4 +47,15 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="show">
+			<resource resourceType="PROJECT" workspacePath="/flight-computer"/>
+		</configuration>
+		<configuration configurationName="Show">
+			<resource resourceType="PROJECT" workspacePath="/flight-computer"/>
+		</configuration>
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/flight-computer"/>
+		</configuration>
+	</storageModule>
 </cproject>
