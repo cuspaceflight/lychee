@@ -18,7 +18,6 @@
 #include "ch.h"
 #include "chprintf.h"
 
-#include "m4radio_router.h"
 #include "ublox.h"
 
 
