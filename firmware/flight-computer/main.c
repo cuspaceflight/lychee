@@ -20,11 +20,11 @@
 
 #include "ublox.h"
 
-
 /*
  * Application entry point.
  */
-int main(void) {
+int main(void)
+{
 
   /*
    * System initializations.
@@ -37,20 +37,36 @@ int main(void) {
   //Debug on serial 4
   sdStart(&SD4, NULL);
 
-  sdWrite(&SD4, (uint8_t *)"Init ublox\r\n", 12);
+  /* Debug title block */
+  /* This is designed to be a solid 40 char wide block */
+  chprintf(&SD4, "                                        \r\n");
+  chprintf(&SD4, " =======================================\r\n");
+  chprintf(&SD4, " == Lychee - High-Altitude Ballooning ==\r\n");
+  chprintf(&SD4, " =======================================\r\n");
+  chprintf(&SD4, " All work copyright 2022 CU Spaceflight \r\n");
+  chprintf(&SD4, " Henry Franks & William Yu              \r\n");
+  chprintf(&SD4, " =======================================\r\n");
+  chprintf(&SD4, "                                        \r\n");
+
+  /* === BEGIN  U-blox (GPS)  BEGIN === */
+
+#ifdef __BYTE_ORDER__
+    if (__BYTE_ORDER__ == __ORDER_BIG_ENDIAN__)
+      chprintf(&SD4, "Big Endian System\r\n");
+    else
+      chprintf(&SD4, "Little Endian System\r\n");
+#else
+    chprintf(&SD4, "BYTE_ORDER not defined\r\n");
+#endif
 
   ublox_init(&SD2);
-  sdWrite(&SD4, (uint8_t *)"Done\r\n", 6);
-  ublox_thd_init();
-  sdWrite(&SD4, (uint8_t *)"Thd\r\n", 5);
+//  ublox_thd_init();
+
+  /* ===  END   U-blox (GPS)   END  === */
 
   /*
    * Normal main() thread activity, in this demo it just performs
    * a shell respawn upon its termination.
    */
-  while (true) {
-    //sdWrite(&SD4, (uint8_t *)"Main\r\n", 6);
-    chThdSleepMilliseconds(500);
-
-  }
+  while (true) {}
 }
