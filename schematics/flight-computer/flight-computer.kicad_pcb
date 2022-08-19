@@ -1884,7 +1884,7 @@
     (pad "35" thru_hole oval (at 0 43.18 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 77 "unconnected-(J104-Pad35)") (pinfunction "Pin_35") (pintype "passive+no_connect") (tstamp 13183cc3-6f21-4b20-9cdc-7c961606e803))
     (pad "36" thru_hole oval (at 2.54 43.18 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
-      (net 78 "unconnected-(J104-Pad36)") (pinfunction "Pin_36") (pintype "passive") (tstamp 991a2bc6-725c-42ed-8c9d-b1635693c13f))
+      (net 78 "unconnected-(J104-Pad36)") (pinfunction "Pin_36") (pintype "passive+no_connect") (tstamp 991a2bc6-725c-42ed-8c9d-b1635693c13f))
     (pad "37" thru_hole oval (at 0 45.72 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 79 "unconnected-(J104-Pad37)") (pinfunction "Pin_37") (pintype "passive+no_connect") (tstamp 4c914135-b90f-46ab-b907-9f03233d859d))
     (pad "38" thru_hole oval (at 2.54 45.72 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
