@@ -181,7 +181,6 @@ include configurations/common.mk
 # List all user C define here, like -D_DEBUG=1
 GITVERSION := $(shell git describe --abbrev=8 --always)
 UDEFS = -DFIRMWARE_VERSION=\"$(GITVERSION)\" \
-		-DVERBOSE_DEBUG_GPS=true \
 		-DDEBUG=$(DEBUG) \
 		$(CFGDEFS)
 
