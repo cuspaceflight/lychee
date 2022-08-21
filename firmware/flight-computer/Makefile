@@ -110,10 +110,11 @@ include $(CHIBIOS)/os/common/ports/ARMv7-M/compilers/GCC/mk/port.mk
 # Auto-build files in ./source recursively.
 #include $(CHIBIOS)/tools/mk/autobuild.mk
 # Other files (optional).
-#include $(CHIBIOS)/os/test/test.mk
-#include $(CHIBIOS)/test/rt/rt_test.mk
-#include $(CHIBIOS)/test/oslib/oslib_test.mk
+include $(CHIBIOS)/os/test/test.mk
+include $(CHIBIOS)/test/rt/rt_test.mk
+include $(CHIBIOS)/test/oslib/oslib_test.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
+include $(CHIBIOS)/os/various/shell/shell.mk
 
 BOARDSRC=./board/board.c
 BOARDINC=./board
@@ -175,16 +176,21 @@ CPPWARN = -Wall -Wextra -Wundef
 # Start of user section
 #
 
+include configurations/common.mk
+
 # List all user C define here, like -D_DEBUG=1
 GITVERSION := $(shell git describe --abbrev=8 --always)
 UDEFS = -DFIRMWARE_VERSION=\"$(GITVERSION)\" \
-		-DVERBOSE_DEBUG_GPS=true
+		-DVERBOSE_DEBUG_GPS=true \
+		-DDEBUG=$(DEBUG) \
+		$(CFGDEFS)
 
 # Define ASM defines here
 UADEFS =
 
 # List all user directories here
-UINCDIR = $(BUFFALOINC) \
+UINCDIR = lib/debug/include \
+		  $(BUFFALOINC) \
 		  $(COYOTEINC) \
 		  $(DRIVERSINC)
 
