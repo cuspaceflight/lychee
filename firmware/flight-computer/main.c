@@ -19,6 +19,11 @@
 #include "chprintf.h"
 
 #include "ublox.h"
+#include "usbserial.h"
+
+#if DEBUG
+#include "debug.h"
+#endif
 
 /*
  * Application entry point.
@@ -34,39 +39,40 @@ int main(void)
   halInit();
   chSysInit();
 
-  //Debug on serial 4
-  sdStart(&SD4, NULL);
+#if DEBUG
+  DEBUG_INIT;
 
   /* Debug title block */
   /* This is designed to be a solid 40 char wide block */
-  chprintf(&SD4, "                                        \r\n");
-  chprintf(&SD4, " =======================================\r\n");
-  chprintf(&SD4, " == Lychee - High-Altitude Ballooning ==\r\n");
-  chprintf(&SD4, " =======================================\r\n");
-  chprintf(&SD4, " All work copyright 2022 CU Spaceflight \r\n");
-  chprintf(&SD4, " Henry Franks & William Yu              \r\n");
-  chprintf(&SD4, " =======================================\r\n");
-  chprintf(&SD4, "                                        \r\n");
-
-  /* === BEGIN  U-blox (GPS)  BEGIN === */
-
-#ifdef __BYTE_ORDER__
-    if (__BYTE_ORDER__ == __ORDER_BIG_ENDIAN__)
-      chprintf(&SD4, "Big Endian System\r\n");
-    else
-      chprintf(&SD4, "Little Endian System\r\n");
-#else
-    chprintf(&SD4, "BYTE_ORDER not defined\r\n");
+  DEBUG_PRINTLN("                                        ");
+  DEBUG_PRINTLN(" =======================================");
+  DEBUG_PRINTLN(" == Lychee - High-Altitude Ballooning ==");
+  DEBUG_PRINTLN(" =======================================");
+  DEBUG_PRINTLN(" All work copyright 2022 CU Spaceflight ");
+  DEBUG_PRINTLN("        Henry Franks & William Yu       ");
+  DEBUG_PRINTLN(" =======================================");
+  DEBUG_PRINTLN("                                        ");
 #endif
 
+
+  /* BEGIN INIT */
+#if ENABLE_GPS
   ublox_init(&SD2);
-//  ublox_thd_init();
+#endif
 
-  /* ===  END   U-blox (GPS)   END  === */
+#if ENABLE_USB
+  usb_init();
+#endif
+  /*  END INIT  */
 
-  /*
-   * Normal main() thread activity, in this demo it just performs
-   * a shell respawn upon its termination.
-   */
+  /* START THREADS */
+#if ENABLE_GPS
+  ublox_thd_init();
+#endif
+
+#if ENABLE_USB
+  usb_thd_init();
+#endif
+
   while (true) {}
 }

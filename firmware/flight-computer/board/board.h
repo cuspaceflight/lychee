@@ -380,8 +380,8 @@
                                      PIN_PUPDR_FLOATING(GPIOA_I2C3_SCL) |   \
                                      PIN_PUPDR_FLOATING(GPIOA_OTG_FS_VBUS) |\
                                      PIN_PUPDR_FLOATING(GPIOA_OTG_FS_ID) |  \
-                                     PIN_PUPDR_FLOATING(GPIOA_OTG_FS_DP) |  \
-                                     PIN_PUPDR_FLOATING(GPIOA_OTG_FS_DN) |  \
+                                     PIN_PUPDR_PULLUP(GPIOA_OTG_FS_DP) |    \
+                                     PIN_PUPDR_PULLUP(GPIOA_OTG_FS_DN) |    \
                                      PIN_PUPDR_FLOATING(GPIOA_SWDIO) |      \
                                      PIN_PUPDR_FLOATING(GPIOA_SWCLK) |      \
                                      PIN_PUPDR_PULLUP(GPIOA_PIN15))
@@ -411,9 +411,9 @@
                                      PIN_AFIO_AF(GPIOA_SPI1_MOSI, 5U))
 #define VAL_GPIOA_AFRH              (PIN_AFIO_AF(GPIOA_I2C3_SCL, 4U) |      \
                                      PIN_AFIO_AF(GPIOA_OTG_FS_VBUS, 0U) |   \
-                                     PIN_AFIO_AF(GPIOA_OTG_FS_ID, 10U) |    \
-                                     PIN_AFIO_AF(GPIOA_OTG_FS_DP, 10U) |    \
-                                     PIN_AFIO_AF(GPIOA_OTG_FS_DN, 10U) |    \
+                                     PIN_AFIO_AF(GPIOA_OTG_FS_ID, 12U) |    \
+                                     PIN_AFIO_AF(GPIOA_OTG_FS_DP, 12U) |    \
+                                     PIN_AFIO_AF(GPIOA_OTG_FS_DN, 12U) |    \
                                      PIN_AFIO_AF(GPIOA_SWDIO, 0U) |         \
                                      PIN_AFIO_AF(GPIOA_SWCLK, 0U) |         \
                                      PIN_AFIO_AF(GPIOA_PIN15, 0U))
