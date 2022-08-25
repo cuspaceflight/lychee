@@ -1,6 +1,8 @@
 #ifndef DEBUG_H_
 #define DEBUG_H_
 
+#include "chprintf.h"
+
 #define DEBUG_SERIAL &SD4
 
 #define DEBUG_INIT sdStart(DEBUG_SERIAL, NULL) //Debug on serial 4

@@ -18,6 +18,7 @@
 #include "ch.h"
 #include "chprintf.h"
 
+#include "ms5611.h"
 #include "ublox.h"
 #include "usbserial.h"
 
@@ -56,6 +57,10 @@ int main(void)
 
 
   /* BEGIN INIT */
+#if ENABLE_BARO
+  ms5611_init();
+#endif
+
 #if ENABLE_GPS
   ublox_init(&SD2);
 #endif
@@ -66,6 +71,10 @@ int main(void)
   /*  END INIT  */
 
   /* START THREADS */
+#if ENABLE_BARO
+  ms5611_init_thd();
+#endif
+
 #if ENABLE_GPS
   ublox_thd_init();
 #endif
@@ -74,5 +83,11 @@ int main(void)
   usb_thd_init();
 #endif
 
-  while (true) {}
+  while (true) {
+#if ENABLE_BARO
+    ms5611_init_thd();
+#endif
+
+    chThdSleepMilliseconds(1000);
+  }
 }
