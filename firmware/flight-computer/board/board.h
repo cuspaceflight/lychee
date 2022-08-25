@@ -358,9 +358,9 @@
                                      PIN_OSPEED_HIGH(GPIOA_USART2_TX) |     \
                                      PIN_OSPEED_HIGH(GPIOA_USART2_RX) |     \
                                      PIN_OSPEED_HIGH(GPIOA_BARO_CS) |       \
-                                     PIN_OSPEED_MEDIUM(GPIOA_SPI1_SCLK) |   \
-                                     PIN_OSPEED_MEDIUM(GPIOA_SPI1_MISO) |   \
-                                     PIN_OSPEED_MEDIUM(GPIOA_SPI1_MOSI) |   \
+                                     PIN_OSPEED_HIGH(GPIOA_SPI1_SCLK) |   \
+                                     PIN_OSPEED_HIGH(GPIOA_SPI1_MISO) |   \
+                                     PIN_OSPEED_HIGH(GPIOA_SPI1_MOSI) |   \
                                      PIN_OSPEED_HIGH(GPIOA_I2C3_SCL) |      \
                                      PIN_OSPEED_HIGH(GPIOA_OTG_FS_VBUS) |   \
                                      PIN_OSPEED_HIGH(GPIOA_OTG_FS_ID) |     \
@@ -373,10 +373,10 @@
                                      PIN_PUPDR_FLOATING(GPIOA_UART4_RX) |   \
                                      PIN_PUPDR_FLOATING(GPIOA_USART2_TX) |  \
                                      PIN_PUPDR_FLOATING(GPIOA_USART2_RX) |  \
-                                     PIN_PUPDR_FLOATING(GPIOA_BARO_CS) |    \
-                                     PIN_PUPDR_FLOATING(GPIOA_SPI1_SCLK) |  \
-                                     PIN_PUPDR_FLOATING(GPIOA_SPI1_MISO) |  \
-                                     PIN_PUPDR_FLOATING(GPIOA_SPI1_MOSI) |  \
+                                     PIN_PUPDR_PULLUP(GPIOA_BARO_CS)     |  \
+                                     PIN_PUPDR_PULLUP(GPIOA_SPI1_SCLK)   |  \
+                                     PIN_PUPDR_FLOATING(GPIOA_SPI1_MISO)   |  \
+                                     PIN_PUPDR_PULLUP(GPIOA_SPI1_MOSI)   |  \
                                      PIN_PUPDR_FLOATING(GPIOA_I2C3_SCL) |   \
                                      PIN_PUPDR_FLOATING(GPIOA_OTG_FS_VBUS) |\
                                      PIN_PUPDR_FLOATING(GPIOA_OTG_FS_ID) |  \
