@@ -3822,7 +3822,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6157cd9e-c8a1-4446-af84-1a32c9bdad0b)
   )
-  (text "UART4 <-> RS-422" (at 31.75 195.58 0)
+  (text "USART3 <-> RS-485" (at 31.75 195.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 76afa8e0-9b3a-439d-843c-ad039d3b6354)
   )
