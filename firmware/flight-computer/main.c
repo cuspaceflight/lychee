@@ -85,7 +85,7 @@ int main(void)
 
   while (true) {
 #if ENABLE_BARO
-    ms5611_init_thd();
+    //ms5611_init_thd();
 #endif
 
     chThdSleepMilliseconds(1000);
