@@ -18,6 +18,7 @@
 #include "ch.h"
 #include "chprintf.h"
 
+#include "mpu9250.h"
 #include "ms5611.h"
 #include "ublox.h"
 #include "usbserial.h"
@@ -57,6 +58,8 @@ int main(void)
 
 
   /* BEGIN INIT */
+  mpu9250_init();
+
 #if ENABLE_BARO
   ms5611_init();
 #endif
@@ -76,17 +79,20 @@ int main(void)
 #endif
 
 #if ENABLE_GPS
-  ublox_thd_init();
+  //ublox_thd_init();
 #endif
 
 #if ENABLE_USB
   usb_thd_init();
 #endif
 
-  while (true) {
 #if ENABLE_BARO
-    //ms5611_init_thd();
+    ms5611_init_thd();
 #endif
+
+  while (true) {
+
+    DEBUG_PRINT("0x%02x\r\n", mpu9250_whoami());
 
     chThdSleepMilliseconds(1000);
   }
