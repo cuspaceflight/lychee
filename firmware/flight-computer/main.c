@@ -92,8 +92,8 @@ int main(void)
 
   while (true) {
 
-    DEBUG_PRINT("0x%02x\r\n", mpu9250_whoami());
+    DEBUG_PRINT("0x%04x\r\n", mpu9250_fifo_count());
 
-    chThdSleepMilliseconds(1000);
+    chThdSleepMilliseconds(10);
   }
 }
