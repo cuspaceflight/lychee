@@ -36,3 +36,6 @@ schematics/*/plot/
 .dep
 build
 
+# macOS
+.DS_Store
+
