@@ -58,7 +58,7 @@ int main(void)
 
 
   /* BEGIN INIT */
-  mpu9250_init();
+  //mpu9250_init();
 
 #if ENABLE_BARO
   ms5611_init();
@@ -79,20 +79,21 @@ int main(void)
 #endif
 
 #if ENABLE_GPS
-  //ublox_thd_init();
+  ublox_thd_init();
 #endif
 
 #if ENABLE_USB
   usb_thd_init();
 #endif
 
-#if ENABLE_BARO
-    ms5611_init_thd();
-#endif
-
   while (true) {
 
-    DEBUG_PRINT("0x%04x\r\n", mpu9250_fifo_count());
+    #if ENABLE_BARO
+      ms5611_convert_d1(MS5611_OSR_4096);
+      ms5611_adc_read();
+    #endif
+
+    //DEBUG_PRINT("0x%04x\r\n", mpu9250_fifo_count());
 
     chThdSleepMilliseconds(10);
   }
